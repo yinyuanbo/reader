@@ -1,0 +1,4608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="minimum-scale=1.0,maximum-scale=1,width=device-width,user-scalable=no">
+    <title>墨阅</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="turn.css" type="text/css" />
+    <!--link rel="stylesheet" href="android.css" type="text/css" /-->
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+
+<div class="abFull">
+
+
+<!-- 激情Pk的上拉框
+<div id="passionpkpay" class="abFull">
+    &lt;!&ndash;class="headerBody passionbody "&ndash;&gt;
+    <div id="myCheckPageScroller4passionpay">
+        <div class="passionbody-con huidu">
+
+            <div class="passion-c1">
+                <div class="p-c1-left">
+                    <div class="c1-body"></div>
+                </div>
+                <div class="p-c1-right">
+                    <div class="c1-body"></div>
+                </div>
+            </div>
+            <div class="passion-c2">
+                <div class="c2-body">
+                    div下有个img然后有个span标签
+
+                    img最好悬浮，悬浮虽然说脱离文档，但是还是占空间的。
+
+                    所以span中的问题可以围绕他。
+
+                    或者div下有个img标签，然后一堆文字也行，具体的自己看。
+                </div>
+            </div>
+            <div class="passion-c3">剩余时间12：0：0：0</div>
+            <div class="passion-c4">拼单号：32454564</div>
+
+        </div>
+    </div>
+
+    <div class="passiontopay">
+
+
+    </div>
+</div>-->
+
+<!--拼失败-->
+<div id="faild4pk" class="abFull hide">
+    <div class="back4mycon">
+        <img src="images/detailback.png">
+    </div>
+    <div id="myCheckPageScroller4faildpk" class=" passionbody">
+        <div class="passionbody-con1">
+            <div class="con1-t22">很遗憾，你获得：</div>
+            <div class="con1-t3">5000书卷</div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--完胜-->
+<div id="wanshengpk" class="abFull hide">
+    <div class="back4mycon">
+        <img src="images/detailback.png">
+    </div>
+    <div id="myCheckPageScroller4successpk" class=" passionbody">
+        <div class="passionbody-con1">
+            <div class="con1-t1">
+                <img src="images/wanshen.png">
+            </div>
+            <div class="con1-t2">你获得</div>
+            <div class="con1-t3">3000书卷+2000书卷</div>
+        </div>
+    </div>
+</div>
+
+<!--拼单成功-->
+<div id="successpd" class="abFull hide ">
+    <div id="myCheckPageScroller4successpd">
+        <div class="successpd-con">
+            <div class="success-1">
+                <div class="successb4one">
+                    <img src="images/Oval.png">
+                </div>
+            </div>
+            <div class="success-2">
+                <div class="successb4two">拼单成功</div>
+            </div>
+            <div class="success-3">
+                <div class="successb4three">你已成为包月会员</div>
+            </div>
+            <div class="success-4">
+                <div class="loginBtDiv aboveCommBt">返回书架</div>
+            </div>
+            <div class="success-5">
+                <div class="loginBtDiv">返回书城</div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+ <!--6.1.3.1激情PK-->
+<div id="passionpk" class="abFull  hide">
+    <div class="back4mycon">
+        <img src="images/detailback.png">
+    </div>
+    <!--class="headerBody passionbody "-->
+  <div id="myCheckPageScroller4passion">
+       <div class="passionbody-con">
+
+           <div class="passion-c1">
+               <div class="p-c1-left">
+                   <div class="c1-body"></div>
+               </div>
+               <div class="p-c1-right">
+                   <div class="c1-body"></div>
+               </div>
+           </div>
+           <div class="passion-c2">
+               <div class="c2-body">
+                   div下有个img然后有个span标签
+
+                   img最好悬浮，悬浮虽然说脱离文档，但是还是占空间的。
+
+                   所以span中的问题可以围绕他。
+
+                   或者div下有个img标签，然后一堆文字也行，具体的自己看。
+               </div>
+           </div>
+           <div class="passion-c3">剩余时间12：0：0：0</div>
+           <div class="passion-c4">拼单号：32454564</div>
+
+       </div>
+  </div>
+
+</div>
+
+<div id="messageC" onclick="hide('messageC')" class=" hide" style="opacity: 1;
+                position: absolute;left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+                z-index: 2147483649;">
+    <div id="messageBack" class="" style="left: 0px;position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+                    ">
+
+    </div>
+    <div id="messageDiv" class="message" onclick="hide('messageC')">
+
+        <div class="messageTitle"></div>
+        <div id="message" class="messageInfo">
+            投标成功，做到收钱
+        </div>
+
+    </div>
+</div>
+
+
+<!--启动首页-->
+<div id="myradio" class="abFull hide">
+
+    <div class="target full" style="padding-top: 30%;">
+        <div class="radioitem radioitemchecked" id="womanradio" onclick="setRadio(0);">
+            <div class="radioicondiv">
+                <img src="./images/woman.png" class="radioicon">
+            </div>
+            <div class="radiotitle">
+                <div class="radioheader">我是女生</div>
+                <div class="radiodetail">豪门总裁、穿越重生</div>
+
+            </div>
+
+            <div class="rdchckicondiv">
+                <img src="./images/rdc1.png" id="rdi0" class="rdchckicon">
+            </div>
+        </div>
+
+        <div class="radioitem" id="manradio" onclick="setRadio(1);">
+            <div class="radioicondiv">
+                <img src="./images/man.png" class="radioicon">
+            </div>
+            <div class="radiotitle">
+                <div class="radioheader">我是男生</div>
+                <div class="radiodetail">玄幻都市、历史军事</div>
+            </div>
+
+            <div class="rdchckicondiv">
+                <img src="./images/rdc2.png" id="rdi1"  class="rdchckicon">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="radiofooter">
+        <div class="loginBtDiv aboveCommBt" style="letter-spacing: 1px;" onclick="goHome();">
+            开启阅读之旅
+        </div>
+    </div>
+</div>
+
+<!--选择频道-->
+<div id="startUp" class="abFull">
+
+    <div class="target full">
+        <div id="siftFoucus15" class="scrollContainer">
+            <div class="scrollItem" onclick="goHome();"><img class="full" src="./images/s0.jpg"></div>
+        </div>
+    </div>
+
+</div>
+
+<!--小说介绍第一次读的时候显示--->
+<div id="bookInfo" class="abFull hide" >
+
+    <div class="abFull readerbg" >
+        <div class="detailBackBt" onclick="goBack();">
+            <img src="./images/detailback.png" class="detailBackIcon">
+        </div>
+
+        <div class="bookinfoicondiv">
+            <img src="./images/bookitemicon.jpg" id="bookinfoicon" onclick="goMyReader4Book();" class="bookinfoicon">
+        </div>
+
+        <div class="bookinfotitle" id="bookinfotitle" onclick="goMyReader4Book();">
+            我想和你好好的
+        </div>
+
+        <div class="bookinfoauthorandtype" onclick="goMyReader4Book();">
+            <div class="bookinfoauthor" id="bookinfoauthor">榴花六</div>
+            <div class="bookinfotype" id="bookinfotype">都市言情</div>
+        </div>
+
+        <div class="bookinfodescp" id="bookinfodescp" onclick="goMyReader4Book();">
+            adfasdfasdf
+        </div>
+    </div>
+
+</div>
+
+<!--章节购买--->
+<div id="buyChapter" class="abFull hide" >
+
+    <div class="abFull readerbg" >
+        <div class="buyChapterName" id="buyChapterName">
+            第137章 我的斩首
+        </div>
+
+        <div class="buyChapterTitle" id="buyChapterTitle">
+            我想和你好好的我想和你好好的我想和你好好的我想和你好好的我想和你好好的我想和你好好的我想和你好好的我想和你好好的我想和你好好的我想和
+            你好好的我想和你好好的我想和你好好的我想和你好好的我想和你好好的我想和你好好的
+        </div>
+
+        <div class="buyChapterTipDiv">
+            <div class="buyChapterTitleTipContentDiv">
+                <div class="buyChapterTitleTipBorder"></div>
+            </div>
+            <div class="buyChapterTitleTipContent">本章需要购买后阅读</div>
+            <!--div class="buyChapterTitleTipContentDiv">
+                <div class="buyChapterTitleTipBorder"></div>
+            </div-->
+        </div>
+
+        <div class="buyChapterPrice" id="buyChapterPrice">本章价格:20书币</div>
+        <div class="buyChapterBalance" id="buyChapterBalance">余额：1000书币 0书券</div>
+
+        <div onclick="setAtuoBuyModel4Read();" >
+            <div class="rdchckicondiv1">
+                <img src="./images/rdc1.png" id="autord1" class="rdchckicon1">
+                <img src="./images/rdc2.png" id="autord2" class="rdchckicon1 hide">
+            </div>
+
+            <div class="buyChapterAutoBuy" id="buyChapterAutoBuy">
+                自动购买下一章，不再提醒
+            </div>
+        </div>
+
+
+        <div class="buyChapterbt buyChapterbtMargin" style="letter-spacing: 1px;" onclick="buyChapter();" id="buyBookBt">
+            购买本章（20书币）
+        </div>
+
+    </div>
+
+</div>
+
+<!--支付方式选择 微信或支付宝--->
+<div id="payhome" class="popAbFull  abovelayer hide">
+    <div class="aboveLayerBG"></div>
+    <div class="popBlank" onclick="hide('payhome');"></div>
+    <div class="rewardscontent1" style="height: 310px;">
+        <div class="paytitle">确认付款</div>
+        <div class="closeAbove" onclick="hide('payhome');">X</div>
+
+        <div class="paytotal" id="paytotal">￥88</div>
+
+        <div class="payitems" >
+            <div class="payitem" onclick="setpayWay(1);">
+                <div class="payitemcontent">
+                    <img src="./images/wx.png" class="payicon" >
+                    <div class="payname">微信</div>
+                    <img src="./images/ck.png" class="payckicon" id="wxicon">
+                </div>
+            </div>
+
+
+            <div class="payitem" onclick="setpayWay(2);">
+                <div class="payitemcontent">
+                    <img src="./images/zfb.png" class="payicon">
+                    <div class="payname">支付宝</div>
+                    <img src="./images/nck.png" class="payckicon" id="zfbicon">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rewardbt" onclick="pay4Native();">
+            立即付款
+        </div>
+    </div>
+</div>
+
+<!--打赏--->
+<div id="rewards" class="popAbFull hide abovelayer">
+    <div class="aboveLayerBG"></div>
+    <div class="popBlank" onclick="hide('rewards');"></div>
+    <div class="rewardscontent1">
+        <div class="rewardtitle">打赏本书</div>
+        <div class="closeAbove" onclick="hide('rewards');">X</div>
+        <div class="mybookbcoins" id="mybookbcoins">余额：60书币</div>
+
+        <div class="rewardsitems" id="rewardsitems">
+            <div class="rewardsitem">
+                <div class="rewardsitemcontent">
+                    <img src="./images/rw1.png" class="rewardicon">
+
+                    <div class="rewardprice">100书币</div>
+                </div>
+            </div>
+
+
+            <div class="rewardsitem">
+                <div class="rewardsitemcontent">
+                    <img src="./images/rw2.png" class="rewardicon">
+
+                    <div class="rewardprice">100书币</div>
+                </div>
+            </div>
+
+            <div class="rewardsitem">
+                <div class="rewardsitemcontent">
+                    <img src="./images/rw3.png" class="rewardicon">
+
+                    <div class="rewardprice">100书币</div>
+                </div>
+            </div>
+
+            <div class="rewardsitem">
+                <div class="rewardsitemcontent">
+                    <img src="./images/rw4.png" class="rewardicon">
+
+                    <div class="rewardprice">100书币</div>
+                </div>
+            </div>
+
+            <div class="rewardsitem">
+                <div class="rewardsitemcontent">
+                    <img src="./images/rw5.png" class="rewardicon">
+
+                    <div class="rewardprice">100书币</div>
+                </div>
+            </div>
+
+            <div class="rewardsitem">
+                <div class="rewardsitemcontent">
+                    <img src="./images/rw6.png" class="rewardicon">
+
+                    <div class="rewardprice">100书币</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rewardbt" onclick="goBoundBook();">
+            打赏本书
+        </div>
+    </div>
+</div>
+
+<div id="investHome" class="abFull hide" style="background: #f2f2f2;">
+    <div class="homeTitle1 " style="border-bottom: none;">
+        <div class="searchBar4">
+            <div class="searchBt4"><img src="./images/ss.png" onclick="searchHome();" class="searchIcon4"></div>
+            <div class="searchTextBG"></div>
+            <div onclick="searchHome();" class="searchText4 ">
+                找书 找作者
+            </div>
+        </div>
+    </div>
+
+    <div class="footerBody" style="overflow: hidden;" id="investScroller">
+        <div class="investScroller" id="homeContent1">
+
+            <div class="bookheaderbg"></div>
+            <div class="focusContainerDiv filter" id="myCurrentBookIconBG">
+
+            </div>
+
+            <div class="myCurrentBookDiv">
+                <div class="myCurrentBookIconDiv">
+                    <img src="./images/mybook1.jpg" class="myCurrentBookIcon" id="myCurrentBookIcon">
+                </div>
+                <div class="myCurrentBookTitleDiv">
+                    <div class="myCurrentBookTitle" id="myCurrentBookTitle">报告妈咪，爹地要骗婚！</div>
+                    <div class="myCurrentBookInfo">
+                        <div class="myCurrentBookProgress">
+                            <div class="myCurrentBookProgressInfo" id="myCurrentBookProgressInfo">
+                                读至50%
+                            </div>
+
+
+                            <div class="myCurrentBookContinue">
+                                <img class="myCurrentBookContinueIcon" src="./images/continueicon.png">
+                            </div>
+                            <div class="myCurrentBookProgressTip" id="myCurrentBookProgressTip">
+                                继续阅读
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="homeMessage" style="margin-top: 20px;">
+                <div class="homeMessageIconDiv">
+                    <img src="./images/messageicon.png" class="homeMessageIcon">
+                </div>
+                <div class="homeMessageContent" id="homeMessageContent">
+                    小仙女 手气拼单赢得3000书券
+                </div>
+                <div class="homeMessageCloseDiv">
+                    <img src="./images/messageclose.png" class="homeMessageClose">
+                </div>
+            </div>
+
+            <div id="homestarlist">
+                <div class="homeNewBooks">
+
+                    <div class="homeNewBooksContent">
+                        <div class="homeNewBooksItemDiv1">
+                            <div class="homeNewBooksItem1">
+                                <div class="homeNewBooksItemIconDiv2">
+                                    <img src="./images/newicon.png" class="newicon">
+                                    <img class="homeNewBooksItemIcon" src="./images/mybook1.jpg">
+                                </div>
+
+                                <div class="homeNewBooksItemInfoDiv">
+                                    <div class="homeNewBooksItemInfoTitle1">
+                                        我想和你好好的
+                                    </div>
+                                    <div class="homeNewBooksItemAuthorType1">
+                                        <div class="homeNewBooksItemAuthor">
+                                            已读1%
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="homeNewBooksItemDiv1">
+                            <div class="homeNewBooksItem1">
+                                <div class="homeNewBooksItemIconDiv2">
+                                    <img src="./images/newicon.png" class="newicon">
+                                    <img class="homeNewBooksItemIcon" src="./images/mybook2.jpg">
+                                </div>
+
+                                <div class="homeNewBooksItemInfoDiv">
+                                    <div class="homeNewBooksItemInfoTitle1">
+                                        我想和你好好的
+                                    </div>
+                                    <div class="homeNewBooksItemAuthorType1">
+                                        <div class="homeNewBooksItemAuthor">
+                                            未读
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="homeNewBooksItemDiv1">
+                            <div class="homeNewBooksItem1">
+                                <div class="homeNewBooksItemIconDiv2">
+                                    <img class="homeNewBooksItemIcon" src="./images/mybook3.jpg">
+                                </div>
+
+                                <div class="homeNewBooksItemInfoDiv">
+                                    <div class="homeNewBooksItemInfoTitle1">
+                                        我想和你好好的
+                                    </div>
+                                    <div class="homeNewBooksItemAuthorType1">
+                                        <div class="homeNewBooksItemAuthor">
+                                            未读
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="homeNewBooksItemDiv1">
+                            <div class="homeNewBooksItem1">
+                                <div class="homeNewBooksItemIconDiv2">
+                                    <img class="homeNewBooksItemIcon" src="./images/mybook4.jpg">
+                                </div>
+
+                                <div class="homeNewBooksItemInfoDiv">
+                                    <div class="homeNewBooksItemInfoTitle1">
+                                        我想和你好好的
+                                    </div>
+                                    <div class="homeNewBooksItemAuthorType1">
+                                        <div class="homeNewBooksItemAuthor">
+                                            未读
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="homeNewBooksItemDiv1">
+                            <div class="homeNewBooksItem1">
+                                <div class="homeNewBooksItemIconDiv2">
+                                    <img src="./images/newicon.png" class="newicon">
+                                    <img class="homeNewBooksItemIcon" src="./images/mybook5.jpg">
+                                </div>
+
+                                <div class="homeNewBooksItemInfoDiv">
+                                    <div class="homeNewBooksItemInfoTitle1">
+                                        我想和你好好的
+                                    </div>
+                                    <div class="homeNewBooksItemAuthorType1">
+                                        <div class="homeNewBooksItemAuthor">
+                                            未读
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="homeNewBooksItemDiv1">
+                            <div class="homeNewBooksItem1">
+                                <div class="addBookDiv">
+                                    <img class="homeNewBooksItemIcon" src="./images/addbook.png">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="editshelfdiv hide" id="editshelftool">
+        <div class="editshelfbtdiv">
+            <div class="editshelfdel" onclick="delShelfBook();">删除</div><div class="editshelfcancle" onclick="cancleEditBookShelf();">取消</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerItem" onclick="goInvestHome();">
+            <div><img class="footerItemIcon" src="./images/t1.png"></div>
+            <div class="footerItemTitle footerItemTitleCheck">书架</div>
+        </div>
+        <div class="footerItem" onclick="goLoanHome();">
+            <div><img class="footerItemIcon" src="./images/t22.png"></div>
+            <div class="footerItemTitle">书城</div>
+        </div>
+        <div class="footerItem" onclick="goAAOrder();">
+            <div><img class="footerItemIcon" src="./images/t55.png"></div>
+            <div class="footerItemTitle">拼单</div>
+        </div>
+
+        <div class="footerItem" onclick="goRaidersHome();">
+            <div><img class="footerItemIcon" src="./images/t33.png"></div>
+            <div class="footerItemTitle">发现</div>
+        </div>
+        <div class="footerItem" onclick="goMyHome();">
+            <div><img class="footerItemIcon" src="./images/t44.png"></div>
+            <div class="footerItemTitle">我的</div>
+        </div>
+    </div>
+</div>
+
+
+<!--分类-->
+<div id="bookTypes" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        分类
+    </div>
+    <div class="headerBody" id="bookTypesScroller">
+        <div class="bigClassDiv" id="bigClassScroller" >
+            <div class="investScroller" id="bigClassContent" onclick="goBookSubType();">
+                <div class="bigClassItem bigClassItemChecked">男生</div>
+                <div class="bigClassItem">女生</div>
+            </div>
+        </div>
+        <div class="smallClassDiv" id="smallClassScroller" onclick="goBookList4Type();">
+            <div class="investScroller" id="smallClassContent" style="background: #fff;">
+                <div class="smallClassItem">
+                    <div class="smallClassItemIconDiv">
+                        <img src="./images/mybook1.jpg" class="smallClassItemIcon">
+                    </div>
+                    <div class="smallClassItemTitle">
+                        玄幻
+                    </div>
+                </div>
+
+                <div class="smallClassItem">
+                    <div class="smallClassItemIconDiv">
+                        <img src="./images/mybook2.jpg" class="smallClassItemIcon">
+                    </div>
+                    <div class="smallClassItemTitle">
+                        武侠
+                    </div>
+                </div>
+
+                <div class="smallClassItem">
+                    <div class="smallClassItemIconDiv">
+                        <img src="./images/mybook3.jpg" class="smallClassItemIcon">
+                    </div>
+                    <div class="smallClassItemTitle">
+                        言情
+                    </div>
+                </div>
+
+                <div class="smallClassItem">
+                    <div class="smallClassItemIconDiv">
+                        <img src="./images/mybook4.jpg" class="smallClassItemIcon">
+                    </div>
+                    <div class="smallClassItemTitle">
+                        科幻
+                    </div>
+                </div>
+
+                <div class="smallClassItem">
+                    <div class="smallClassItemIconDiv">
+                        <img src="./images/mybook5.jpg" class="smallClassItemIcon">
+                    </div>
+                    <div class="smallClassItemTitle">
+                        通话
+                    </div>
+                </div>
+
+                <div class="smallClassItem">
+                    <div class="smallClassItemIconDiv">
+                        <img src="./images/mybook6.jpg" class="smallClassItemIcon">
+                    </div>
+                    <div class="smallClassItemTitle">
+                        都市
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--排行-->
+<div id="topList" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        排行
+    </div>
+    <div class="header1">
+        <div class="subTitleDiv1 subTitleDivChecked" onclick="setTopList(1,this);">推荐</div>
+        <div class="subTitleDiv1" onclick="setTopList(2,this);">订阅</div>
+        <div class="subTitleDiv1" onclick="setTopList(3,this);">点击</div>
+        <div class="subTitleDiv1" onclick="setTopList(4,this);">收藏</div>
+        <div class="subTitleDiv1" onclick="setTopList(5,this);">分享</div>
+    </div>
+
+    <div class="headerBody1" id="topListScroller" onclick="goBookDetail();">
+        <div class="investScroller" id="topListContent" style="padding: 0 10px;background: #fff;">
+            <div class="listItem">
+                <div class="listItemOrderDiv1">1</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook1.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemOrderDiv2">2</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook6.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemOrderDiv2">3</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook2.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemOrderDiv2">4</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook3.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemOrderDiv2">5</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook4.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemOrderDiv2">6</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook5.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+            <div class="listItem">
+                <div class="listItemOrderDiv2">7</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook6.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--限免-->
+<div id="freeList" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        限免
+    </div>
+    <div class="headerBody" id="freeListScroller" onclick="goBookDetail();">
+        <div class="investScroller" id="freeListContent" style="padding: 0px 10px;background: #fff;">
+
+            <div class="listItem">
+                <div class="freeFlag">免</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook1.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="freeFlag">免</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook6.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="freeFlag">免</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook2.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="freeFlag">免</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook3.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="freeFlag">免</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook4.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="freeFlag">免</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook5.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+            <div class="listItem">
+                <div class="freeFlag">免</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook6.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--小说列表-->
+<div id="bookList4Type" class="abFull hide">
+    <div class="homeTitle" id="bookTypeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        限免
+    </div>
+    <div class="headerBody" id="bookList4TypeScroller" onclick="goBookDetail();">
+        <div class="investScroller" id="bookList4TypeContent">
+
+            <div class="listItem">
+                <div class="freeFlag">免</div>
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook1.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--充值-->
+<div id="buyHome" class="abFull hide" >
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        充值
+    </div>
+
+    <div class="headerFooterBody" id="buyHomeScroller" style="top:40px;">
+        <div id="buyHomeList" class="ssl hide" >
+
+            <div class="focusContainerDivRechage">
+                <div id="siftFoucus3" class="focusContainer" data-page="">
+                    <div class="scrollItem" onclick="">
+                        <img class="wFull" src="./images/luckypin.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--首页新书抢鲜-->
+        <div class="rechargeDiv">
+            <div class="rechargeDivHeader">
+                <div class="rechargeDivHeaderTitle rechargeDivHeaderTitleCheck" onclick="checkCharge(1);" id="rechargeDivHeaderTitle1">书币</div>
+                <div class="rechargeDivHeaderTitle"  onclick="checkCharge(2);" id="rechargeDivHeaderTitle2">畅读</div>
+            </div>
+            <div class="chargeProductContent" >
+                <div id="chargeProductList" class="abFull " style="background: #fff;">
+                    <div class="chargeTip">
+                        <div class="chargeTipMsg">书币兑换比例：1元=100书币</div>
+                        <div class="chargeTipBalance" id="chargeTipBalance">余额  0书币</div>
+                    </div>
+                    <div class="chargeProductListContent" id="chargeProductListScoller">
+                        <div id="chargeProductListContent">
+                        <div class="chargeProductItem">
+                            <div class="chargeProductItemContent">
+                                <div class="chargeProductItemName"><span class="chargeProductItemNameCount">3000</span>书币</div>
+                                <div class="chargeProductItemGift"></div>
+                                <div class="chargeProductItemPrice">￥30</div>
+                            </div>
+                        </div>
+
+                        <div class="chargeProductItem">
+                            <div class="chargeProductItemContent">
+                                <div class="chargeProductItemName"><span class="chargeProductItemNameCount">5000</span>书币</div>
+                                <div class="chargeProductItemGift">送1000书券</div>
+                                <div class="chargeProductItemPrice">￥50</div>
+                            </div>
+                        </div>
+
+                        <div class="chargeProductItem">
+                            <div class="chargeProductItemContent">
+                                <div class="chargeProductItemName"><span class="chargeProductItemNameCount">10000</span>书币</div>
+                                <div class="chargeProductItemGift">送2500书券</div>
+                                <div class="chargeProductItemPrice">￥100</div>
+                            </div>
+                        </div>
+
+                        <div class="chargeProductItem">
+                            <div class="chargeProductItemContent">
+                                <div class="chargeProductItemName"><span class="chargeProductItemNameCount">50000</span>书币</div>
+                                <div class="chargeProductItemGift">送20000书券</div>
+                                <div class="chargeProductItemPrice">￥500</div>
+                            </div>
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div id="vipProductList" class="abFull hide" style="background: #fff;">
+                    <div class="chargeTip">
+                        <div class="chargeTipMsg"></div>
+                        <div class="chargeTipBalance" id="vipTipBalance">余额  0书币</div>
+                    </div>
+                    <div class="chargeProductListContent" id="vipProductListScoller">
+                        <div id="vipProductListContent">
+                            <div class="chargeProductItem">
+                                <div class="chargeProductItemContent">
+                                    <div class="chargeProductItemName"><span class="chargeProductItemNameCount">包年</span></div>
+                                    <div class="chargeProductItemGift">免费畅读</div>
+                                    <div class="chargeProductItemPrice">￥360</div>
+                                </div>
+                            </div>
+
+                            <div class="chargeProductItem">
+                                <div class="chargeProductItemContent">
+                                    <div class="chargeProductItemName"><span class="chargeProductItemNameCount">半年</span></div>
+                                    <div class="chargeProductItemGift">免费畅读</div>
+                                    <div class="chargeProductItemPrice">￥200</div>
+                                </div>
+                            </div>
+
+                            <div class="chargeProductItem">
+                                <div class="chargeProductItemContent">
+                                    <div class="chargeProductItemName"><span class="chargeProductItemNameCount">3个月</span></div>
+                                    <div class="chargeProductItemGift">免费畅读</div>
+                                    <div class="chargeProductItemPrice">￥120</div>
+                                </div>
+                            </div>
+
+                            <div class="chargeProductItem">
+                                <div class="chargeProductItemContent">
+                                    <div class="chargeProductItemName"><span class="chargeProductItemNameCount">包月</span></div>
+                                    <div class="chargeProductItemGift">免费畅读</div>
+                                    <div class="chargeProductItemPrice">￥50</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <div class="footer">
+        <div class="paybt1">金额 <span id="feetotal" class="feetotal">￥30</span></div>
+        <div class="paybt2" onclick="pay4Order();">立即支付</div>
+    </div>
+</div>
+
+<!--拼单首页-->
+<div id="aaOrderHome" class="abFull hide" >
+
+<div class="homeTitle">
+    <div class="searchBar3 hide">
+        <div class="searchBt"><img src="./images/ss1.png" onclick="searchHome();" class="searchIcon1"></div>
+        <div onclick="searchHome();" class="searchText1 ">
+            输入单号 查找我的拼单
+        </div>
+    </div>
+
+    <div class="pkheader">
+        <div class="pkheaderitem pkchecked" onclick="pkOrderCharge(1);" id="mypklist1">手气拼单</div>
+
+        <div class="pkheaderitem" onclick="pkOrderCharge(2);" id="mypklist2">畅读拼单</div>
+    </div>
+
+    <div onclick="goLuckPkProductList();" class="headerIconDiv hide">发起拼单</div>
+</div>
+
+
+<div class="rechargeDivHeader hide" style="height: 40px;top: 5px;">
+    <div class="rechargeDivHeaderTitle rechargeDivHeaderTitleCheck" onclick="pkOrderCharge(1);"  style="line-height: 39px;">手气拼单</div>
+    <div class="rechargeDivHeaderTitle" onclick="pkOrderCharge(2);" style="line-height: 39px;">畅读拼单</div>
+</div>
+
+<div class="newpkorder" onclick="goLuckPkProductList();">发起</div>
+
+<div class="headerFooterBody" id="aaOrderHomeScroller" style="background: #f2f2f2;">
+
+<div id="aaOrderHomeList" class="ssl">
+
+<div class="focusContainerDiv1 hide">
+    <div id="siftFoucus2" class="focusContainer" data-page=""
+         style="transform: translateX(0px); transform-style: preserve-3d;">
+        <div class="scrollItem" onclick="">
+            <img class="full" src="./images/luckypin.jpg">
+        </div>
+    </div>
+    <div class="focusDotDivBG"></div>
+    <div class="focusDotDiv">
+        <div>
+            <div id="siftFoucus2_0" class="dotSelected"></div>
+        </div>
+    </div>
+</div>
+
+<!--首页新书抢鲜-->
+<div class="homeNewBooks" id="mypkorderlist1">
+    <div class="homeNewBooksHeader hide">
+        <div class="homeNewBooksHeaderTitle">手气拼单</div>
+        <div class="homeNewBooksHeaderIconDiv" onclick="goLuckPkProductList();">
+            <img src="./images/headeritemicon.png" class="homeNewBooksHeaderIcon">
+        </div>
+    </div>
+
+    <div class="homeNewBooksContent" id="luckorderlist">
+        <div class="homeLuckypkItemDiv" onclick="goLuckPkProductDetail();">
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <img src="./images/hi1.png" class="luckypkicon">
+                        </div>
+                        <div class="homeLuckyItemFounderName">
+                            刘星
+                        </div>
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeLuckyNo">单号:2376898789</div>
+                        <div class="homeLuckyCoins">3000书币</div>
+                        <div class="homeLuckyQuan">3000书券</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice">总价值：￥45</div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice">￥20<img class="joinBt" src="./images/join.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+            <div class="homeLuckyItemInfo">
+                <div class="homeLuckyItemFounder">
+                    <div class="homeLuckyItemIconDiv">
+                        <img src="./images/hi2.png" class="luckypkicon">
+                    </div>
+                    <div class="homeLuckyItemFounderName">
+                        刘星
+                    </div>
+                </div>
+                <div class="homeLuckyItem">
+                    <div class="homeLuckyNo">单号:98765432</div>
+                    <div class="homeLuckyCoins">6000书币</div>
+                    <div class="homeLuckyQuan">6000书券</div>
+                </div>
+                <div class="homeLuckyOrginPrice">总价值：￥90</div>
+            </div>
+            <div class="homeLuckyPriceItem">
+                <div class="homeLuckyPrice">￥50<img class="joinBt" src="./images/join.png"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+            <div class="homeLuckyItemInfo">
+                <div class="homeLuckyItemFounder">
+                    <div class="homeLuckyItemIconDiv">
+                        <img src="./images/hi3.png" class="luckypkicon">
+                    </div>
+                    <div class="homeLuckyItemFounderName">
+                        呵呵
+                    </div>
+                </div>
+                <div class="homeLuckyItem">
+                    <div class="homeLuckyNo">单号:567342</div>
+                    <div class="homeLuckyCoins">3000书币</div>
+                    <div class="homeLuckyQuan">3000书券</div>
+                </div>
+                <div class="homeLuckyOrginPrice">总价值：￥45</div>
+            </div>
+            <div class="homeLuckyPriceItem">
+                <div class="homeLuckyPrice">￥20<img class="joinBt" src="./images/join.png"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+            <div class="homeLuckyItemInfo">
+                <div class="homeLuckyItemFounder">
+                    <div class="homeLuckyItemIconDiv">
+                        <img src="./images/hi4.jpg" class="luckypkicon">
+                    </div>
+                    <div class="homeLuckyItemFounderName">
+                        李毅
+                    </div>
+                </div>
+                <div class="homeLuckyItem">
+                    <div class="homeLuckyNo">单号:765432</div>
+                    <div class="homeLuckyCoins">3000书币</div>
+                    <div class="homeLuckyQuan">3000书券</div>
+                </div>
+                <div class="homeLuckyOrginPrice">总价值：￥45</div>
+            </div>
+            <div class="homeLuckyPriceItem">
+                <div class="homeLuckyPrice">￥20<img class="joinBt" src="./images/join.png"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+            <div class="homeLuckyItemInfo">
+                <div class="homeLuckyItemFounder">
+                    <div class="homeLuckyItemIconDiv">
+                        <img src="./images/hi5.jpg" class="luckypkicon">
+                    </div>
+                    <div class="homeLuckyItemFounderName">
+                        付蓉
+                    </div>
+                </div>
+                <div class="homeLuckyItem">
+                    <div class="homeLuckyNo">单号:98765456</div>
+                    <div class="homeLuckyCoins">10000书币</div>
+                    <div class="homeLuckyQuan">10000书券</div>
+                </div>
+                <div class="homeLuckyOrginPrice">总价值：￥150</div>
+            </div>
+            <div class="homeLuckyPriceItem">
+                <div class="homeLuckyPrice">￥80<img class="joinBt" src="./images/join.png"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+            <div class="homeLuckyItemInfo">
+                <div class="homeLuckyItemFounder">
+                    <div class="homeLuckyItemIconDiv">
+                        <img src="./images/hi6.jpg" class="luckypkicon">
+                    </div>
+                    <div class="homeLuckyItemFounderName">
+                        刘洋
+                    </div>
+                </div>
+                <div class="homeLuckyItem">
+                    <div class="homeLuckyNo">单号:123456789</div>
+                    <div class="homeLuckyCoins">5000书币</div>
+                    <div class="homeLuckyQuan">5000书券</div>
+                </div>
+                <div class="homeLuckyOrginPrice">总价值：￥80</div>
+            </div>
+            <div class="homeLuckyPriceItem">
+                <div class="homeLuckyPrice">￥45<img class="joinBt" src="./images/join.png"></div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--灵异大作 左右滑动-->
+<div class="homeNewBooks hide"  id="mypkorderlist2">
+    <div class="homeNewBooksHeader hide">
+        <div class="homeNewBooksHeaderTitle">畅读拼单</div>
+        <div class="homeNewBooksHeaderIconDiv" onclick="goVipPkProductList();">
+            <img src="./images/headeritemicon.png" class="homeNewBooksHeaderIcon">
+        </div>
+    </div>
+
+    <div class="homeNewBooksContent" id="viporderlist">
+        <div class="homeLuckypkItemDiv" onclick="goVipPkProductDetail();">
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <div class="vippkicon">包年</div>
+                        </div>
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeVipNo">单号:2376898789</div>
+                        <div class="homeLuckyCoins">长篇免费</div>
+                        <div class="homeLuckyQuan">短篇免费</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice">原价：￥360</div>
+                    <div class="patternItem">
+                        <div class="homePartternIconDiv"><img src="./images/hi1.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><img src="./images/hi2.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><div class="homeNoPatternIcon">...</div></div>
+                    </div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice">￥120<img class="joinBt" src="./images/join.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <div class="vippkicon">包年</div>
+                        </div>
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeVipNo">单号:98765432</div>
+                        <div class="homeLuckyCoins">长篇免费</div>
+                        <div class="homeLuckyQuan">短篇免费</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice">原价：￥360</div>
+                    <div class="patternItem">
+                        <div class="homePartternIconDiv"><img src="./images/hi4.jpg" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><img src="./images/hi5.jpg" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><div class="homeNoPatternIcon">...</div></div>
+                    </div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice">￥120<img class="joinBt" src="./images/join.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <div class="vippkicon">包月</div>
+                        </div>
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeVipNo">单号:567342</div>
+                        <div class="homeLuckyCoins">长篇免费</div>
+                        <div class="homeLuckyQuan">短篇免费</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice">原价：￥30</div>
+                    <div class="patternItem">
+                        <div class="homePartternIconDiv"><img src="./images/hi1.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><img src="./images/hi5.jpg" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><div class="homeNoPatternIcon">...</div></div>
+                    </div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice">￥12<img class="joinBt" src="./images/join.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <div class="vippkicon">半年</div>
+                        </div>
+
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeVipNo">单号:765432</div>
+                        <div class="homeLuckyCoins">长篇免费</div>
+                        <div class="homeLuckyQuan">短篇免费</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice">原价：￥200</div>
+                    <div class="patternItem">
+                        <div class="homePartternIconDiv"><img src="./images/hi1.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><img src="./images/hi5.jpg" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><div class="homeNoPatternIcon">...</div></div>
+                    </div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice">￥70<img class="joinBt" src="./images/join.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <div class="vippkicon">包年</div>
+                        </div>
+
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeVipNo">单号:98765456</div>
+                        <div class="homeLuckyCoins">长篇免费</div>
+                        <div class="homeLuckyQuan">短篇免费</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice">原价：￥360</div>
+                    <div class="patternItem">
+                        <div class="homePartternIconDiv"><img src="./images/hi1.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><img src="./images/hi5.jpg" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><div class="homeNoPatternIcon">...</div></div>
+                    </div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice">￥120<img class="joinBt" src="./images/join.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeLuckypkItemDiv">
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <div class="vippkicon">包月</div>
+                        </div>
+
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeVipNo">单号:123456789</div>
+                        <div class="homeLuckyCoins">长篇免费</div>
+                        <div class="homeLuckyQuan">短篇免费</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice">原价：￥30</div>
+                    <div class="patternItem">
+                        <div class="homePartternIconDiv"><img src="./images/hi1.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><img src="./images/hi5.jpg" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv"><div class="homeNoPatternIcon">...</div></div>
+                    </div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice">￥12<img class="joinBt" src="./images/join.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="footer">
+    <div class="footerItem" onclick="goInvestHome();">
+        <div><img class="footerItemIcon" src="./images/t11.png"></div>
+        <div class="footerItemTitle ">书架</div>
+    </div>
+    <div class="footerItem" onclick="goLoanHome();">
+        <div><img class="footerItemIcon" src="./images/t22.png"></div>
+        <div class="footerItemTitle">书城</div>
+    </div>
+
+    <div class="footerItem" onclick="goAAOrder();">
+        <div><img class="footerItemIcon" src="./images/t5.png"></div>
+        <div class="footerItemTitle footerItemTitleCheck">拼单</div>
+    </div>
+
+    <div class="footerItem" onclick="goRaidersHome();">
+        <div><img class="footerItemIcon" src="./images/t33.png"></div>
+        <div class="footerItemTitle">发现</div>
+    </div>
+    <div class="footerItem" onclick="goMyHome();">
+        <div><img class="footerItemIcon" src="./images/t44.png"></div>
+        <div class="footerItemTitle">我的</div>
+    </div>
+</div>
+</div>
+
+<!--拼单产品列表-->
+<div id="luckPkProductList" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        发起拼单
+    </div>
+    <div class="headerBody" id="luckPkProductListScroller" style="overflow: hidden;">
+        <div class="investScroller" >
+            <div class="homeNewBooksHeader">
+                <div class="homeNewBooksHeaderTitle">手气拼单</div>
+                <div class="homeNewBooksHeaderIconDiv" onclick="goLuckPkProductList();">
+                    <img src="./images/headeritemicon.png" class="homeNewBooksHeaderIcon">
+                </div>
+            </div>
+            <div class="homeNewBooksContent" id="luckpkcontent">
+                <div class="luckypkProdcutItem">
+                    <div class="luckypkProdcutItemContent">
+                        <div class="luckypkProdcutItemTitle">
+                            5000
+                            <span class="luckypkProdcutItemTitleUnit">书币</span>
+                        </div>
+                        <div class="luckypkProdcutItemTitle1">5000书券</div>
+
+                        <div class="luckypkProdcutItemPirce">
+                            ￥18
+                            <span class="luckypkProdcutItemOrginPirce">￥45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="luckypkProdcutItem">
+                    <div class="luckypkProdcutItemContent">
+                        <div class="luckypkProdcutItemTitle">
+                            3000
+                            <span class="luckypkProdcutItemTitleUnit">书币</span>
+                        </div>
+                        <div class="luckypkProdcutItemTitle1">3000书券</div>
+
+                        <div class="luckypkProdcutItemPirce">
+                            ￥18
+                            <span class="luckypkProdcutItemOrginPirce">￥45</span>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="luckypkProdcutItem">
+                    <div class="luckypkProdcutItemContent">
+                        <div class="luckypkProdcutItemTitle">
+                            3000
+                            <span class="luckypkProdcutItemTitleUnit">书币</span>
+                        </div>
+                        <div class="luckypkProdcutItemTitle1">3000书券</div>
+
+                        <div class="luckypkProdcutItemPirce">
+                            ￥18
+                            <span class="luckypkProdcutItemOrginPirce">￥45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="luckypkProdcutItem">
+                    <div class="luckypkProdcutItemContent">
+                        <div class="luckypkProdcutItemTitle">
+                            3000
+                            <span class="luckypkProdcutItemTitleUnit">书币</span>
+                        </div>
+                        <div class="luckypkProdcutItemTitle1">3000书券</div>
+
+                        <div class="luckypkProdcutItemPirce">
+                            ￥18
+                            <span class="luckypkProdcutItemOrginPirce">￥45</span>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+
+            <div class="homeNewBooksHeader">
+                <div class="homeNewBooksHeaderTitle">畅读拼单</div>
+                <div class="homeNewBooksHeaderIconDiv" onclick="goLuckPkProductList();">
+                    <img src="./images/headeritemicon.png" class="homeNewBooksHeaderIcon">
+                </div>
+            </div>
+            <div class="homeNewBooksContent" id="vippkcontent">
+                <div class="luckypkProdcutItem">
+                    <div class="luckypkProdcutItemContent">
+                        <div class="luckypkProdcutItemTitle">
+                            包年
+                            <span class="luckypkProdcutItemTitleUnit">畅读</span>
+                        </div>
+                        <div class="luckypkProdcutItemTitle1">长篇免费 短篇免费</div>
+
+                        <div class="luckypkProdcutItemPirce">
+                            ￥18
+                            <span class="luckypkProdcutItemOrginPirce">￥45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="luckypkProdcutItem">
+                    <div class="luckypkProdcutItemContent">
+                        <div class="luckypkProdcutItemTitle">
+                            半年
+                            <span class="luckypkProdcutItemTitleUnit">畅读</span>
+                        </div>
+                        <div class="luckypkProdcutItemTitle1">长篇免费 短篇免费</div>
+
+                        <div class="luckypkProdcutItemPirce">
+                            ￥18
+                            <span class="luckypkProdcutItemOrginPirce">￥45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="luckypkProdcutItem">
+                    <div class="luckypkProdcutItemContent">
+                        <div class="luckypkProdcutItemTitle">
+                            3个月
+                            <span class="luckypkProdcutItemTitleUnit">畅读</span>
+                        </div>
+                        <div class="luckypkProdcutItemTitle1">长篇免费 短篇免费</div>
+
+                        <div class="luckypkProdcutItemPirce">
+                            ￥18
+                            <span class="luckypkProdcutItemOrginPirce">￥45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="luckypkProdcutItem">
+                    <div class="luckypkProdcutItemContent">
+                        <div class="luckypkProdcutItemTitle">
+                            包月
+                            <span class="luckypkProdcutItemTitleUnit">畅读</span>
+                        </div>
+                        <div class="luckypkProdcutItemTitle1">长篇免费 短篇免费</div>
+
+                        <div class="luckypkProdcutItemPirce">
+                            ￥18
+                            <span class="luckypkProdcutItemOrginPirce">￥45</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </div>
+</div>
+
+<!--手气拼单详情-->
+<div id="luckPkProductDetail" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        手气拼单
+    </div>
+    <div class="headerBody" id="luckPkProductDetailScroller" >
+        <div class="investScroller" style="background: #fff;">
+
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <img src="./images/hi1.png" class="luckypkicon" id="luckordericon">
+                        </div>
+                        <div class="homeLuckyItemFounderName1" id="luckordername">
+                            刘星
+                        </div>
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeLuckyNo1" id="luckorderno">单号:2376898789</div>
+                        <div class="homeLuckyCoins" id="luckorderwin">3000书币</div>
+                        <div class="homeLuckyQuan" id="luckorderlose">3000书券</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice" id="luckordertotalvalue">总价值：￥45</div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice" id="luckorderprice">￥20<span class="luckypkProdcutJoin">立刻加入拼单</span></div>
+                </div>
+            </div>
+
+            <div class="pkRuleInfo">
+                <div class="pkRuleTitle">拼单规则</div>
+                <div class="pkRuleItem">
+                    <div class="pkRuleItemNo">1</div>
+                    <div class="pkRuleItemContent">手气拼单，幸运的一方获得<span id="luckorderrulewin">3000</span>书币，另一方获得<span id="luckorderrulelose">3000</span>书券。</div>
+                </div>
+                <div class="pkRuleItem">
+                    <div class="pkRuleItemNo">2</div>
+                    <div class="pkRuleItemContent">手气拼单获得书币和书券与充值购买享有相同的使用规则。</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerBt1" style="color: #666;" id="lkpricetip">发起拼单</div>
+        <div class="footerBt1 footerBuyBt1" onclick="joinPkOrder(currPkOrder.id);">加入拼单</div>
+    </div>
+</div>
+
+<!--vip拼单详情-->
+<div id="vipPkProductDetail" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        畅读拼单
+    </div>
+    <div class="headerBody" id="vipPkProductDetailScroller" style="overflow: hidden;">
+        <div class="investScroller" style="background: #fff;">
+
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <div class="vippkicon" id="vipordername">包年</div>
+                        </div>
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeLuckyNo1" id="viporderno">单号:2376898789</div>
+                        <div class="homeLuckyCoins">长篇免费</div>
+                        <div class="homeLuckyQuan">短篇免费</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice" id="viporderamount">原价：￥360</div>
+                    <div class="patternItem" id="vipordermembers">
+                        <div class="homePartternIconDiv1"><img src="./images/hi1.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv1"><img src="./images/hi2.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv1"><div class="homeNoPatternIcon">...</div></div>
+                    </div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice" id="viporderprice">￥120<span class="luckypkProdcutJoin">立刻加入拼单</span></div>
+                </div>
+            </div>
+
+            <div class="pkRuleInfo">
+                <div class="pkRuleTitle">拼单规则</div>
+                <div class="pkRuleItem">
+                    <div class="pkRuleItemNo">1</div>
+                    <div class="pkRuleItemContent">畅读拼单，3个人参与完成一次畅读拼单，每个人只需支付原价1/3左右的价格，即可享受同等畅读服务。</div>
+                </div>
+                <div class="pkRuleItem">
+                    <div class="pkRuleItemNo">2</div>
+                    <div class="pkRuleItemContent">畅读拼单获得阅读权利和普通购买的VIP阅读权利享有相同的使用规则。</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerBt1" style="color: #666;" id="vippricetip">发起拼单</div>
+        <div class="footerBt1 footerBuyBt1" onclick="joinPkOrder(currPkOrder.id);">加入拼单</div>
+    </div>
+</div>
+
+
+<!--创建手气拼单详情-->
+<div id="luckPkProductDetailc" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        手气拼单
+    </div>
+    <div class="headerBody" id="luckPkProductDetailScroller1" >
+        <div class="investScroller" style="background: #fff;">
+
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <img src="./images/hi1.png" class="luckypkicon" id="luckordericon1">
+                        </div>
+                        <div class="homeLuckyItemFounderName1" id="luckordername1">
+                            刘星
+                        </div>
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeLuckyNo1 hide" id="luckorderno1">单号:2376898789</div>
+                        <div class="homeLuckyCoins" id="luckorderwin1">3000书币</div>
+                        <div class="homeLuckyQuan" id="luckorderlose1">3000书券</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice" id="luckordertotalvalue1">总价值：￥45</div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice" id="luckorderprice1">￥20<span class="luckypkProdcutJoin">立刻发起拼单</span></div>
+                </div>
+            </div>
+
+            <div class="pkRuleInfo">
+                <div class="pkRuleTitle">拼单规则</div>
+                <div class="pkRuleItem">
+                    <div class="pkRuleItemNo">1</div>
+                    <div class="pkRuleItemContent">手气拼单，幸运的一方获得<span id="luckorderrulewin1">3000</span>书币，另一方获得<span id="luckorderrulelose1">3000</span>书券。</div>
+                </div>
+                <div class="pkRuleItem">
+                    <div class="pkRuleItemNo">2</div>
+                    <div class="pkRuleItemContent">手气拼单获得书币和书券与充值购买享有相同的使用规则。</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerBt1" style="color: #666;" id="lkpricetip1">发起拼单</div>
+        <div class="footerBt1 footerBuyBt1" onclick="createpkorder(5);">发起拼单</div>
+    </div>
+</div>
+
+<!--创建vip拼单详情-->
+<div id="vipPkProductDetailc" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        畅读拼单
+    </div>
+    <div class="headerBody" id="vipPkProductDetailScroller1" style="overflow: hidden;">
+        <div class="investScroller" style="background: #fff;">
+
+            <div class="homeLuckyItemContent">
+                <div class="homeLuckyItemInfo">
+                    <div class="homeLuckyItemFounder">
+                        <div class="homeLuckyItemIconDiv">
+                            <div class="vippkicon" id="vipordername1">包年</div>
+                        </div>
+                    </div>
+                    <div class="homeLuckyItem">
+                        <div class="homeLuckyNo1" id="viporderno1">单号:2376898789</div>
+                        <div class="homeLuckyCoins">长篇免费</div>
+                        <div class="homeLuckyQuan">短篇免费</div>
+                    </div>
+                    <div class="homeLuckyOrginPrice" id="viporderamount1">原价：￥360</div>
+                    <div class="patternItem" id="vipordermembers1">
+                        <div class="homePartternIconDiv1"><img src="./images/hi1.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv1"><img src="./images/hi2.png" class="homePartternIcon"></div>
+                        <div class="homePartternIconDiv1"><div class="homeNoPatternIcon">...</div></div>
+                    </div>
+                </div>
+                <div class="homeLuckyPriceItem">
+                    <div class="homeLuckyPrice" id="viporderprice1">￥120<span class="luckypkProdcutJoin">立刻加入拼单</span></div>
+                </div>
+            </div>
+
+            <div class="pkRuleInfo">
+                <div class="pkRuleTitle">拼单规则</div>
+                <div class="pkRuleItem">
+                    <div class="pkRuleItemNo">1</div>
+                    <div class="pkRuleItemContent">畅读拼单，3个人参与完成一次畅读拼单，每个人只需支付原价1/3左右的价格，即可享受同等畅读服务。</div>
+                </div>
+                <div class="pkRuleItem">
+                    <div class="pkRuleItemNo">2</div>
+                    <div class="pkRuleItemContent">畅读拼单获得阅读权利和普通购买的VIP阅读权利享有相同的使用规则。</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerBt1" style="color: #666;" id="vippricetip1">发起拼单</div>
+        <div class="footerBt1 footerBuyBt1"  onclick="createpkorder(6);">发起拼单</div>
+    </div>
+</div>
+
+<div id="tip4Add2Shelf" class="rtFull hide" style="z-index: 1000;">
+    <div class="tip2AddTitleDiv">
+        <div class="tip2AddTitle">是否加入到书架?</div>
+        <div>
+            <div class="tip2AddCancle"><div style="border-right: 1px solid #E0E0E0;"  onclick="cancleAdd2Shel();">取消</div></div>
+            <div calass="tip2AddOk" onclick="okAdd2Shelf();">确定</div>
+        </div>
+    </div>
+</div>
+
+<!--列表-->
+<div id="bookList" class="abFull hide">
+    <div class="homeTitle" id="bookListTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        列表
+    </div>
+    <div class="headerBody" id="bookListScroller" >
+        <div class="investScroller">
+
+        </div>
+    </div>
+</div>
+
+<!--小说详情-->
+<div id="bookDetail" class="abFull hide">
+<div class="footerBody" id="bookDetailScroller" >
+<div class="investScroller">
+
+<div class="bookheaderbg"></div>
+<div class="focusContainerDiv filter"  id="detailBookIconBG">
+
+</div>
+
+<div class="myCurrentBookDiv" style="left: 65px;">
+    <div class="myCurrentBookIconDiv" >
+        <img src="./images/mybook1.jpg" class="myCurrentBookIcon" id="detailBookIcon">
+    </div>
+    <div class="myCurrentBookTitleDiv" >
+        <div class="myCurrentBookTitle" id="detailBookTitle" style="margin-top: 20px;margin-bottom: 10px;">报告妈咪，爹地要骗婚！</div>
+        <div class="detailBookInfo" id="detailauthoer">
+            作者：流花柳
+        </div>
+        <div class="detailBookInfo" id="detailtype">
+            类型：杨青
+        </div>
+        <div class="detailBookInfo" id="detailwords">
+            字数：45000
+        </div>
+    </div>
+</div>
+
+<div class="detailBackBt" onclick="goBack();">
+    <img src="./images/detailback.png" class="detailBackIcon">
+</div>
+
+
+<!--小说介绍-->
+<div class="detailBookDesc1">
+<div class="detailBookDesc" id="detailBookDesc">
+    放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我下一步会发生啥，因为我也不知道。 一个平凡女生和身边一众帅哥靓妹的纠缠。 作者玻璃心，想批评我的，在自己心里骂就行，就不要告诉我了。
+</div>
+
+<div onclick="openClose();" id="openClose" class="openClose">展开&raquo;</div>
+</div>
+
+<div class="updateInfo">
+    <div class="newflagdiv">
+        <img src="./images/newflag.png" class="newflagicon">
+    </div>
+    <div class="boolchaptertitle" id="boolchaptertitle">第123章 余生有你（大结局）</div>
+    <div class="vipflagdiv" id="vipflagdiv">
+        <img src="./images/vipflag.png" class="vipflagicon">
+    </div>
+
+    <div class="updatedate" id="updatedate">更新于 2017-10-10</div>
+
+</div>
+
+<div class="detailBookOpts">
+    <div class="detailBookOptItem" onclick="goChaptersList();">
+        <div class="detailBookOptItemIconDiv">
+            <img src="./images/chapters.png" class="detailBookOptItemIcon">
+        </div>
+        <div class="detailBookOptItemTitle">目录</div>
+    </div>
+
+    <div class="detailBookOptItem" onclick="goRewards();">
+        <div class="detailBookOptItemIconDiv">
+            <img src="./images/good.png" class="detailBookOptItemIcon">
+        </div>
+        <div class="detailBookOptItemTitle">打赏</div>
+    </div>
+
+    <div class="detailBookOptItem">
+        <div class="detailBookOptItemIconDiv">
+            <img src="./images/sharebook.png" class="detailBookOptItemIcon">
+        </div>
+        <div class="detailBookOptItemTitle">分享</div>
+    </div>
+</div>
+
+<div class="detailBookCommentHeader">
+    <div class="detailBookCommentHeaderTitle">评论</div>
+    <div class="detailBookCommentHeaderCount">123人评论</div>
+
+
+    <div class="detailBookCommentHeaderSend" onclick="goSendCommit();">
+        发表评论
+    </div>
+    <div class="detailBookCommentHeaderIconDiv">
+        <img src="./images/sendcomments.png" class="detailBookCommentHeaderIcon">
+    </div>
+</div>
+
+<div class="detailBookCommentList" id="detailBookCommentList">
+    <div class="commentItem">
+        <div class="commentItemIconDiv">
+            <img src="./images/icon1.png" class="commentItemIcon">
+        </div>
+
+        <div class="commentContent">
+            <div class="commentContentHeader">
+                <div class="commentContentHeaderAuthorDate">
+                    <div class="commentContentHeaderAuthor">
+                        路人甲
+                    </div>
+                    <div class="commentContentHeaderDate">
+                        2017-10-10
+                    </div>
+                </div>
+                <div class="commentContentHeaderGoodsSends">
+                    <div class="commentItemOptItem">
+                        <div class="commentItemOptItemIconDiv">
+                            <img src="./images/comments.png" class="commentItemOptItemIcon">
+                        </div>
+                        <div class="commentItemOptItemTitle">(4)</div>
+                    </div>
+
+                    <div class="commentItemOptItem">
+                        <div class="commentItemOptItemIconDiv">
+                            <img src="./images/goodicon.png" class="commentItemOptItemIcon">
+                        </div>
+                        <div class="commentItemOptItemTitle">(4)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="commentContentBody">
+                作者的脑洞，到哪里，情节就到哪里，不要问我下一步会发生啥，因为我也不知道。 一个平凡女生和身边一众帅哥靓妹的纠缠。 作者玻...
+            </div>
+        </div>
+    </div>
+
+    <div class="commentItem">
+        <div class="commentItemIconDiv">
+            <img src="./images/icon1.png" class="commentItemIcon">
+        </div>
+
+        <div class="commentContent">
+            <div class="commentContentHeader">
+                <div class="commentContentHeaderAuthorDate">
+                    <div class="commentContentHeaderAuthor">
+                        路人甲
+                    </div>
+                    <div class="commentContentHeaderDate">
+                        2017-10-10
+                    </div>
+                </div>
+                <div class="commentContentHeaderGoodsSends">
+                    <div class="commentItemOptItem">
+                        <div class="commentItemOptItemIconDiv">
+                            <img src="./images/comments.png" class="commentItemOptItemIcon">
+                        </div>
+                        <div class="commentItemOptItemTitle">4</div>
+                    </div>
+
+                    <div class="commentItemOptItem">
+                        <div class="commentItemOptItemIconDiv">
+                            <img src="./images/goodicon.png" class="commentItemOptItemIcon">
+                        </div>
+                        <div class="commentItemOptItemTitle">4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="commentContentBody">
+                作者的脑洞，到哪里，情节就到哪里，不要问我下一步会发生啥，因为我也不知道。 一个平凡女生和身边一众帅哥靓妹的纠缠。 作者玻...
+            </div>
+        </div>
+    </div>
+
+    <div class="commentItem">
+        <div class="commentItemIconDiv">
+            <img src="./images/icon1.png" class="commentItemIcon">
+        </div>
+
+        <div class="commentContent">
+            <div class="commentContentHeader">
+                <div class="commentContentHeaderAuthorDate">
+                    <div class="commentContentHeaderAuthor">
+                        路人甲
+                    </div>
+                    <div class="commentContentHeaderDate">
+                        2017-10-10
+                    </div>
+                </div>
+                <div class="commentContentHeaderGoodsSends">
+                    <div class="commentItemOptItem">
+                        <div class="commentItemOptItemIconDiv">
+                            <img src="./images/comments.png" class="commentItemOptItemIcon">
+                        </div>
+                        <div class="commentItemOptItemTitle">4</div>
+                    </div>
+
+                    <div class="commentItemOptItem">
+                        <div class="commentItemOptItemIconDiv">
+                            <img src="./images/goodicon.png" class="commentItemOptItemIcon">
+                        </div>
+                        <div class="commentItemOptItemTitle">4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="commentContentBody">
+                作者的脑洞，到哪里，情节就到哪里，不要问我下一步会发生啥，因为我也不知道。 一个平凡女生和身边一众帅哥靓妹的纠缠。 作者玻...
+            </div>
+        </div>
+    </div>
+
+    <div class="allComments" onclick="goBookComments();">更多评论>></div>
+
+</div>
+
+</div>
+</div>
+<div class="footer">
+    <div class="footerBt" style="line-height: 49px;" onclick="add2BookShelf();">加入书架</div>
+    <div class="footerBt footerBuyBt" style="line-height: 49px;"  onclick="goMyReader4Book();">开始阅读</div>
+    <div class="footerBt" style="line-height: 49px;"  onclick="goChaptersList();">查看目录</div>
+</div>
+</div>
+
+<!--全部评论-->
+<div id="commentsList" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        全部评论
+    </div>
+    <div class="headerFooterBody" id="commentsListScroller" >
+        <div class="investScroller">
+
+            <div class="detailBookCommentHeader">
+                <div class="detailBookCommentHeaderTitle">评论</div>
+                <div class="detailBookCommentHeaderCount">123人评论</div>
+
+
+                <div class="detailBookCommentHeaderSend" onclick="goSendCommit();">
+                    发表评论
+                </div>
+                <div class="detailBookCommentHeaderIconDiv">
+                    <img src="./images/sendcomments.png" class="detailBookCommentHeaderIcon">
+                </div>
+            </div>
+
+            <div class="detailBookCommentList" id="bookCommentList">
+                <div class="commentItem">
+                    <div class="commentItemIconDiv">
+                        <img src="./images/icon1.png" class="commentItemIcon">
+                    </div>
+
+                    <div class="commentContent">
+                        <div class="commentContentHeader">
+                            <div class="commentContentHeaderAuthorDate">
+                                <div class="commentContentHeaderAuthor">
+                                    路人甲
+                                </div>
+                                <div class="commentContentHeaderDate">
+                                    2017-10-10
+                                </div>
+                            </div>
+                            <div class="commentContentHeaderGoodsSends">
+                                <div class="commentItemOptItem">
+                                    <div class="commentItemOptItemIconDiv">
+                                        <img src="./images/comments.png" class="commentItemOptItemIcon">
+                                    </div>
+                                    <div class="commentItemOptItemTitle">(4)</div>
+                                </div>
+
+                                <div class="commentItemOptItem">
+                                    <div class="commentItemOptItemIconDiv">
+                                        <img src="./images/goodicon.png" class="commentItemOptItemIcon">
+                                    </div>
+                                    <div class="commentItemOptItemTitle">(4)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentContentBody">
+                            作者的脑洞，到哪里，情节就到哪里，不要问我下一步会发生啥，因为我也不知道。 一个平凡女生和身边一众帅哥靓妹的纠缠。 作者玻...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commentItem">
+                    <div class="commentItemIconDiv">
+                        <img src="./images/icon1.png" class="commentItemIcon">
+                    </div>
+
+                    <div class="commentContent">
+                        <div class="commentContentHeader">
+                            <div class="commentContentHeaderAuthorDate">
+                                <div class="commentContentHeaderAuthor">
+                                    路人甲
+                                </div>
+                                <div class="commentContentHeaderDate">
+                                    2017-10-10
+                                </div>
+                            </div>
+                            <div class="commentContentHeaderGoodsSends">
+                                <div class="commentItemOptItem">
+                                    <div class="commentItemOptItemIconDiv">
+                                        <img src="./images/comments.png" class="commentItemOptItemIcon">
+                                    </div>
+                                    <div class="commentItemOptItemTitle">4</div>
+                                </div>
+
+                                <div class="commentItemOptItem">
+                                    <div class="commentItemOptItemIconDiv">
+                                        <img src="./images/goodicon.png" class="commentItemOptItemIcon">
+                                    </div>
+                                    <div class="commentItemOptItemTitle">4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentContentBody">
+                            作者的脑洞，到哪里，情节就到哪里，不要问我下一步会发生啥，因为我也不知道。 一个平凡女生和身边一众帅哥靓妹的纠缠。 作者玻...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commentItem">
+                    <div class="commentItemIconDiv">
+                        <img src="./images/icon1.png" class="commentItemIcon">
+                    </div>
+
+                    <div class="commentContent">
+                        <div class="commentContentHeader">
+                            <div class="commentContentHeaderAuthorDate">
+                                <div class="commentContentHeaderAuthor">
+                                    路人甲
+                                </div>
+                                <div class="commentContentHeaderDate">
+                                    2017-10-10
+                                </div>
+                            </div>
+                            <div class="commentContentHeaderGoodsSends">
+                                <div class="commentItemOptItem">
+                                    <div class="commentItemOptItemIconDiv">
+                                        <img src="./images/comments.png" class="commentItemOptItemIcon">
+                                    </div>
+                                    <div class="commentItemOptItemTitle">4</div>
+                                </div>
+
+                                <div class="commentItemOptItem">
+                                    <div class="commentItemOptItemIconDiv">
+                                        <img src="./images/goodicon.png" class="commentItemOptItemIcon">
+                                    </div>
+                                    <div class="commentItemOptItemTitle">4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentContentBody">
+                            作者的脑洞，到哪里，情节就到哪里，不要问我下一步会发生啥，因为我也不知道。 一个平凡女生和身边一众帅哥靓妹的纠缠。 作者玻...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blankComments"></div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerBt" onclick="addMerchant2Favos(1);">加入书架</div>
+        <div class="footerBt footerBuyBt" onclick="goMyReader4Book();">开始阅读</div>
+        <div class="footerBt" id="timestampbt" onclick="goChaptersList();">查看目录</div>
+    </div>
+</div>
+
+
+<div id="sendCommits" class="abFull hide" >
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        我要评论
+    </div>
+    <div class="rewardscontent">
+
+        <div class="commentInputDiv">
+            <textarea class="inputArea" id="commentText"></textarea>
+        </div>
+
+        <div class="rewardbt" onclick="sendComment();">
+            提交
+        </div>
+    </div>
+</div>
+
+<!--目录-->
+<div id="chaptersList" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        目录
+    </div>
+
+    <div class="bookChaptersDiv">
+        <div class="bookChaptersTitle" id="chapterListName">重相逢</div>
+        <div class="bookChaptersCount" id="chapterListCount">共37章</div>
+
+        <div class="bookChaptersAsc" id="bookChaptersAsc" onclick="setAscDesc();">
+            <div class="bookChaptersAscIconDiv">
+                <img src="./images/asc.png" class="bookChaptersAscIcon">
+            </div>
+            <div class="bookChaptersAscTitle">
+                正序
+            </div>
+        </div>
+
+        <div class="bookChaptersAsc hide" id="bookChaptersDesc" onclick="setAscDesc();">
+            <div class="bookChaptersAscIconDiv">
+                <img src="./images/desc.png" class="bookChaptersAscIcon">
+            </div>
+            <div class="bookChaptersAscTitle">
+                倒序
+            </div>
+        </div>
+    </div>
+
+    <div class="headerBody" id="chaptersListScroller" style="top:88px;" onclick="goReader4ChaperList();">
+        <div class="investScroller" id="chapterListContent">
+            <div class="bookChaptersItem">
+                第一章 喜多林
+            </div>
+            <div class="bookChaptersItem">
+                第二章 喜多林
+            </div>
+            <div class="bookChaptersItem">
+                第三章 喜多林
+            </div>
+            <div class="bookChaptersItem">
+                第四章 喜多林
+            </div>
+            <div class="bookChaptersItem">
+                第五章 喜多林
+            </div>
+            <div class="bookChaptersItem">
+                第六章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon">
+            </div>
+            <div class="bookChaptersItem">
+                第七章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon">
+            </div>
+            <div class="bookChaptersItem">
+                第八章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon">
+            </div>
+            <div class="bookChaptersItem">
+                第九章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon">
+            </div>
+            <div class="bookChaptersItem">
+                第十章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon">
+            </div>
+            <div class="bookChaptersItem">
+                第十一章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon">
+            </div>
+            <div class="bookChaptersItem">
+                第十二章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon">
+            </div>
+            <div class="bookChaptersItem">
+                第十三章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon">
+            </div>
+            <div class="bookChaptersItem">
+                第十四章 喜多林
+                <img src="./images/lockedicon.png" class="lockIcon" >
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer hide">
+        <div class="footerBt" onclick="addMerchant2Favos(1);">加入书架</div>
+        <div class="footerBt footerBuyBt" onclick="goMyReader4Book();">开始阅读</div>
+        <div class="footerBt" id="timestampbt" onclick="goChaptersList();">查看目录</div>
+    </div>
+</div>
+
+
+<div id="searchHome" class="abFull hide" style="z-index: 9999999999;">
+
+    <div class="homeTitle">
+        <div class="searchBar" style="left:46px;right: 20px;">
+            <div class="searchBt " onclick="search4Key('searchHomeText');"><img src="./images/search1.png"
+                                                                                class="searchIcon"></div>
+            <form action="#70" onsubmit="search4Key('searchHomeText');return false;"><input id="searchHomeText"
+                                                                                            type="text"
+                                                                                            class="searchText inutTextAlain"
+                                                                                            style="color:black;"
+                                                                                            placeholder="找小说 找作家">
+            </form>
+        </div>
+        <div onclick="goBack();" class="headerIconDiv1 typeTitle"><img src="./images/rdr7.png"
+                                                                                 style="left:15px;"
+                                                                                 class="headerIcon1 typeIcon"></div>
+
+
+    </div>
+
+    <div class="headerBody" id="searchHomeScroller" onclick="goBookDetail();" style="background: #fff;">
+
+        <div>
+            <!--自定义借款-->
+            <div id="searchHomeContent" class="">
+
+
+            </div>
+
+
+        </div>
+
+        <div id="searchTip" class="searchMessage hide"> 没有搜索到相关小说 类型 作者</div>
+
+    </div>
+
+</div>
+
+
+<!--书城首页-->
+<div id="loanHome" class="abFull hide" style="background: #f2f2f2;">
+
+<div class="homeTitle1 " style="border-bottom: none;">
+    <div class="searchBar4">
+        <div class="searchBt4"><img src="./images/ss.png" onclick="searchHome();" class="searchIcon4"></div>
+        <div class="searchTextBG"></div>
+        <div onclick="searchHome();" class="searchText4 ">
+            找书 找作者
+        </div>
+    </div>
+</div>
+
+
+<div class="footerBody" id="loanScroller">
+
+<div id="myself" class="ssl">
+
+<div class="focusContainerDiv">
+    <div id="siftFoucus1" class="focusContainer" data-page=""
+         style="transform: translateX(0px); transform-style: preserve-3d;">
+        <div class="scrollItem" onclick="">
+            <img class="full" src="./images/ads.jpg">
+        </div>
+    </div>
+    <div class="focusDotDivBG"></div>
+    <div class="focusDotDiv">
+        <div>
+            <div id="siftFoucus1_0" class="dotSelected"></div>
+        </div>
+    </div>
+</div>
+
+<!--首页板块-->
+<div class="homeModules">
+    <div class="homeModuleDiv" onclick="goBookTypes();">
+        <div class="homeModulesIconDiv">
+            <img class="homeModulesIcon" src="./images/md1.png">
+        </div>
+        <div class="homeModulesTitle">分类</div>
+    </div>
+
+    <div class="homeModuleDiv" onclick="goTopList();">
+        <div class="homeModulesIconDiv">
+            <img class="homeModulesIcon" src="./images/md2.png">
+        </div>
+        <div class="homeModulesTitle">排行</div>
+    </div>
+
+    <div class="homeModuleDiv" onclick="goFreeList();">
+        <div class="homeModulesIconDiv">
+            <img class="homeModulesIcon" src="./images/md3.png">
+        </div>
+        <div class="homeModulesTitle">限免</div>
+    </div>
+
+    <div class="homeModuleDiv" onclick="goAAOrder();">
+        <div class="homeModulesIconDiv">
+            <img class="homeModulesIcon" src="./images/md4.png">
+        </div>
+        <div class="homeModulesTitle">拼单</div>
+    </div>
+</div>
+
+<!--首页公告-->
+<div class="homeMessage">
+    <div class="homeMessageIconDiv">
+        <img src="./images/messageicon.png" class="homeMessageIcon">
+    </div>
+    <div class="homeMessageContent" id="homeMessageContent">
+        小仙女 手气拼单赢得3000书券
+    </div>
+    <div class="homeMessageCloseDiv">
+        <img src="./images/messageclose.png" class="homeMessageClose">
+    </div>
+</div>
+
+<!--首页本周强推-->
+<div class="homeRecommend">
+
+</div>
+
+<!--首页新书抢鲜-->
+<div class="homeNewBooks">
+    <div class="homeNewBooksHeader">
+        <div class="homeNewBooksHeaderTitle">新书抢鲜</div>
+        <div class="homeNewBooksHeaderIconDiv">
+            <img src="./images/headeritemicon.png" class="homeNewBooksHeaderIcon">
+        </div>
+    </div>
+    <div class="homeNewBooksContent">
+        <div class="homeNewBooksItemDiv">
+            <div class="homeNewBooksItem" onclick="goBookDetail();">
+                <div class="homeNewBooksItemIconDiv">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook5.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeNewBooksItemDiv">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook4.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeNewBooksItemDiv">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook2.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeNewBooksItemDiv">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook3.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--灵异大作 左右滑动-->
+<div class="homeNewBooks">
+    <div class="homeNewBooksHeader">
+        <div class="homeNewBooksHeaderTitle">灵异大作</div>
+        <div class="homeNewBooksHeaderIconDiv">
+            <img src="./images/headeritemicon.png" class="homeNewBooksHeaderIcon">
+        </div>
+    </div>
+    <div class="homeNewBooksContent">
+        <div class="homeNewBooksItemDiv1">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv1">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook1.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle1">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType1">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeNewBooksItemDiv1">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv1">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook2.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle1">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType1">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeNewBooksItemDiv1">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv1">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook3.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle1">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType1">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeNewBooksItemDiv1">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv1">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook4.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle1">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType1">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeNewBooksItemDiv1">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv1">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook5.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle1">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType1">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homeNewBooksItemDiv1">
+            <div class="homeNewBooksItem">
+                <div class="homeNewBooksItemIconDiv1">
+                    <img class="homeNewBooksItemIcon" src="./images/mybook6.jpg">
+                </div>
+
+                <div class="homeNewBooksItemInfoDiv">
+                    <div class="homeNewBooksItemInfoTitle1">
+                        我想和你好好的
+                    </div>
+                    <div class="homeNewBooksItemAuthorType1">
+                        <div class="homeNewBooksItemAuthor">
+                            柳花六
+                        </div>
+                        <div class="homeNewBooksItemType">
+                            都市言情
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--推荐类目-->
+<div class="homeClass"></div>
+
+
+</div>
+
+</div>
+
+<div class="footer">
+    <div class="footerItem" onclick="goInvestHome();">
+        <div><img class="footerItemIcon" src="./images/t11.png" ></div>
+        <div class="footerItemTitle ">书架</div>
+    </div>
+    <div class="footerItem">
+        <div><img class="footerItemIcon" src="./images/t2.png"></div>
+        <div class="footerItemTitle footerItemTitleCheck">书城</div>
+    </div>
+
+    <div class="footerItem" onclick="goAAOrder();">
+        <div><img class="footerItemIcon" src="./images/t55.png"></div>
+        <div class="footerItemTitle">拼单</div>
+    </div>
+
+    <div class="footerItem" onclick="goRaidersHome();">
+        <div><img class="footerItemIcon" src="./images/t33.png"></div>
+        <div class="footerItemTitle">发现</div>
+    </div>
+    <div class="footerItem" onclick="goMyHome();">
+        <div><img class="footerItemIcon" src="./images/t44.png"></div>
+        <div class="footerItemTitle">我的</div>
+    </div>
+</div>
+
+</div>
+
+
+<!--发现-->
+<div id="raidersHome" class="abFull hide">
+    <div class="homeTitle">
+        发现
+    </div>
+
+    <div class="headerFooterBody" id="raiderScroller" >
+        <div class="investScroller">
+
+            <div class="searchItem" onclick="goActivityList();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/sr1.png">
+                </div>
+                <div class="searchItemTitle">活动</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goCheckPage();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/sr2.png">
+                </div>
+                <div class="searchItemTitle">签到</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goBookBillList();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/sr3.png">
+                </div>
+                <div class="searchItemTitle">书单</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem hide">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/sr4.png">
+                </div>
+                <div class="searchItemTitle">分享得书券</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/sr5.png">
+                </div>
+                <div class="searchItemTitle">拼单专区</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goFreeList();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/sr6.png">
+                </div>
+                <div class="searchItemTitle">限免专区</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerItem">
+            <div><img class="footerItemIcon" src="./images/t11.png" onclick="goInvestHome();"></div>
+            <div class="footerItemTitle ">书架</div>
+        </div>
+        <div class="footerItem">
+            <div><img class="footerItemIcon" src="./images/t22.png" onclick="goLoanHome();"></div>
+            <div class="footerItemTitle ">书城</div>
+        </div>
+
+        <div class="footerItem" onclick="goAAOrder();">
+            <div><img class="footerItemIcon" src="./images/t55.png"></div>
+            <div class="footerItemTitle">拼单</div>
+        </div>
+
+        <div class="footerItem">
+            <div><img class="footerItemIcon" src="./images/t3.png"></div>
+            <div class="footerItemTitle footerItemTitleCheck">发现</div>
+        </div>
+        <div class="footerItem" onclick="goMyHome();">
+            <div><img class="footerItemIcon" src="./images/t44.png"></div>
+            <div class="footerItemTitle">我的</div>
+        </div>
+    </div>
+
+</div>
+
+<!--签到页面-->
+<div id="myCheckPage" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        签到
+    </div>
+
+    <div class="headerBody" id="myCheckPageScroller">
+        <div class="investScroller" style="background: #fff;padding: 8px 15px 15px;width: auto;">
+
+            <div class="checkHeader">
+                <div class="quanerCountTitle">可用书券：</div>
+                <div class="quanerCount" id="quanerCount">2书券</div>
+                <div class="quanerRule">签到规则</div>
+            </div>
+
+            <div class="checkStatus">
+                <div class="checkStatusTitle" id="todaystatus">今日未签到</div>
+                <div class="checkStatusCount" id="totalsign">本期累计签到：1天</div>
+            </div>
+
+            <div class="checkPageList" id="checkPageList">
+                <div class="checkPageListItem">
+                    <div class="checkPageListItemHeader">
+                        <div class="checkPageListItemHeaderChecked">
+                            <img src="./images/check.png" class="checkPageListItemHeaderCheckedIcon">
+                        </div>
+                        <div class="checkPageListItemHeaderNotChecked hide">
+                            <img src="./images/quaner.png" class="checkPageListItemQuanIcon">
+                            X 2
+                        </div>
+                    </div>
+                    <div class="checkPageListItemTitle">
+                        第1天
+                    </div>
+                </div>
+                <div class="checkPageListItem">
+                    <div class="checkPageListItemHeader">
+                        <div class="checkPageListItemHeaderChecked">
+                            <img src="./images/check.png" class="checkPageListItemHeaderCheckedIcon">
+                        </div>
+                        <div class="checkPageListItemHeaderNotChecked hide">
+                            <img src="./images/quaner.png" class="checkPageListItemQuanIcon">
+                            X 4
+                        </div>
+                    </div>
+                    <div class="checkPageListItemTitle">
+                        第2天
+                    </div>
+                </div>
+
+                <div class="checkPageListItem">
+                    <div class="checkPageListItemHeader">
+                        <div class="checkPageListItemHeaderChecked hide">
+                            <img src="./images/check.png" class="checkPageListItemHeaderCheckedIcon">
+                        </div>
+                        <div class="checkPageListItemHeaderNotChecked">
+                            <img src="./images/quaner.png" class="checkPageListItemQuanIcon">
+                            X 6
+                        </div>
+                    </div>
+                    <div class="checkPageListItemTitle">
+                        第3天
+                    </div>
+                </div>
+                <div class="checkPageListItem">
+                    <div class="checkPageListItemHeader">
+                        <div class="checkPageListItemHeaderChecked hide">
+                            <img src="./images/check.png" class="checkPageListItemHeaderCheckedIcon">
+                        </div>
+                        <div class="checkPageListItemHeaderNotChecked">
+                            <img src="./images/quaner.png" class="checkPageListItemQuanIcon">
+                            X 8
+                        </div>
+                    </div>
+                    <div class="checkPageListItemTitle">
+                        第4天
+                    </div>
+                </div>
+                <div class="checkPageListItem">
+                    <div class="checkPageListItemHeader">
+                        <div class="checkPageListItemHeaderChecked hide">
+                            <img src="./images/check.png" class="checkPageListItemHeaderCheckedIcon">
+                        </div>
+                        <div class="checkPageListItemHeaderNotChecked">
+                            <img src="./images/quaner.png" class="checkPageListItemQuanIcon">
+                            X 10
+                        </div>
+                    </div>
+                    <div class="checkPageListItemTitle">
+                        第5天
+                    </div>
+                </div>
+                <div class="checkPageListItem">
+                    <div class="checkPageListItemHeader">
+                        <div class="checkPageListItemHeaderChecked hide">
+                            <img src="./images/check.png" class="checkPageListItemHeaderCheckedIcon">
+                        </div>
+                        <div class="checkPageListItemHeaderNotChecked">
+                            <img src="./images/quaner.png" class="checkPageListItemQuanIcon">
+                            X 12
+                        </div>
+                    </div>
+                    <div class="checkPageListItemTitle">
+                        第6天
+                    </div>
+                </div>
+                <div class="checkPageListItem">
+                    <div class="checkPageListItemHeader">
+                        <div class="checkPageListItemHeaderChecked hide">
+                            <img src="./images/check.png" class="checkPageListItemHeaderCheckedIcon">
+                        </div>
+                        <div class="checkPageListItemHeaderNotChecked">
+                            <img src="./images/quaner.png" class="checkPageListItemQuanIcon">
+                            X 15
+                        </div>
+                    </div>
+                    <div class="checkPageListItemTitle">
+                        第7天
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkButton" onclick="sendSign(2);">签到</div>
+
+        </div>
+    </div>
+</div>
+
+<!--活动列表-->
+<div id="bookBillList" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        书单
+    </div>
+
+    <div class="headerBody" id="bookBillListScroller" onclick="goBookBillDetail();">
+        <div class="investScroller" id="bookBillListContent">
+
+            <div class="activityItem1">
+                <div class="activityItemIconDiv">
+                    <img class="activityItemIcon" src="./images/activityicon.jpg">
+                </div>
+                <div class="activityItemTitle">一剑西来落飘零</div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook3.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook4.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook5.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook6.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--活动列表-->
+<div id="bookBillList1" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        书单列表
+    </div>
+
+    <div class="headerBody" id="bookBillListScroller1" onclick="goBookDetail();">
+        <div class="investScroller" id="bookBillListContent1">
+
+            <div class="activityItem1">
+                <div class="activityItemIconDiv">
+                    <img class="activityItemIcon" src="./images/activityicon.jpg">
+                </div>
+                <div class="activityItemTitle">一剑西来落飘零</div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook3.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook4.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook5.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listItem">
+                <div class="listItemIconDiv">
+                    <img src="./images/mybook6.jpg" class="listItemIcon">
+                </div>
+                <div class="listItemInfoDiv">
+
+                    <div class="listItemTitle">我想和你好好的</div>
+                    <div class="listItemDesc">放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...</div>
+                    <div class="listItemAuthorTypes">
+                        <div class="listItemAuthor">柳花六</div>
+                        <div class="listItemCount">123万字</div>
+                        <div class="listItemType">言情小说</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--活动列表-->
+<div id="activityList" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        活动
+    </div>
+
+    <div class="headerBody" id="activityListScroller" onclick="goActivityDetail();">
+        <div class="investScroller" id="activityListContent">
+
+            <div class="activityItem">
+                <div class="activityItemIconDiv">
+                    <img class="activityItemIcon" src="./images/activityicon.jpg">
+                </div>
+                <div class="activityItemTitle">一剑西来落飘零</div>
+
+                <div class="activityReadMore">
+                    <div class="activityReadMoreTitle">
+                        阅读全文
+                    </div>
+                    <div class="goIconDiv">
+                        <img class="goIcon" src="./images/goicon.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="activityItem">
+                <div class="activityItemIconDiv">
+                    <img class="activityItemIcon" src="./images/activityicon.jpg">
+                </div>
+                <div class="activityItemTitle">一剑西来落飘零</div>
+
+                <div class="activityReadMore">
+                    <div class="activityReadMoreTitle">
+                        阅读全文
+                    </div>
+                    <div class="goIconDiv">
+                        <img class="goIcon" src="./images/goicon.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="activityItem">
+                <div class="activityItemIconDiv">
+                    <img class="activityItemIcon" src="./images/activityicon.jpg">
+                </div>
+                <div class="activityItemTitle">一剑西来落飘零</div>
+
+                <div class="activityReadMore">
+                    <div class="activityReadMoreTitle">
+                        阅读全文
+                    </div>
+                    <div class="goIconDiv">
+                        <img class="goIcon" src="./images/goicon.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--活动详情界面-->
+<div id="activityDetail" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        <div class="productHeader">
+            活动推广
+        </div>
+
+        <div onclick="goInvestShare(3);" class="headerIconDiv hide"><img src="./images/share.png" class="headerIcon3">
+        </div>
+    </div>
+
+    <div class="headerBody" id="activityDetailScroller">
+
+        <div class="investScroller" id="activityDetailContent">
+
+
+        </div>
+
+
+    </div>
+    <div class="footer hide" style="height: 250px;">
+
+    </div>
+</div>
+
+<!--我的个人中心-->
+<div id="myHome" class="abFull hide">
+    <div class="headerIconDiv" style="width: 45px;z-index: 100000;top: 15px;" onclick="goMsgTip();">
+        <img src="./images/inform3.png" class="saomiao" id="msgtip">
+    </div>
+
+    <div class="headerFooterBody" id="myHomeScroller" style="top: 0px; overflow: hidden;">
+
+        <div class="myHomeScroller">
+            <!--div class="homeHeader">
+                <img src="./images/iconbg.jpg" class="homeHeaderBg">
+
+                <div class="headerIcon" onclick="goMyInfo();">
+                    <div class="circleheaderdiv">
+                        <img id="myheadericon" src="./images/daultheadicon.jpg" class="full">
+                    </div>
+
+                    <div class="circleheaderdivName">
+                        <div class="myName" id="myName">某某某</div>
+                        <img src="./images/youjiantou9.png" class="headerIcon4">
+                    </div>
+
+                    <div class="homeHeader2">
+
+                        <div class="myTel hide" id="myTel">13600000000</div>
+                    </div>
+
+                </div>
+
+
+                <div class="myHeader4BG"></div>
+                <div class="myHeader4">
+
+                    <div class="myHeaderItem" onclick="goMyOrder(2,'我的订单');">
+                        <div class="hiscount" id="myLoveMerchant">0</div>
+                        <div class="histitle">我的书币</div>
+                    </div>
+                    <div class="myHeaderItem" onclick="goMyLoves();">
+                        <div class="hiscount" id="myLoveProducts">0</div>
+                        <div class="histitle">我的书券</div>
+                    </div>
+                    <div class="myHeaderItem" onclick="goBuyHome();">
+                        <div class="hiscount" id="exploerCount">0</div>
+                        <div class="histitle">立马充值</div>
+                    </div>
+
+                </div>
+
+            </div-->
+
+            <div class="myHomeHeader">
+                <div class="myHomeName" id="myName">未登陆</div>
+                <div class="myHomeId" id="myId">登陆更好玩</div>
+
+                <div class="loginOut" id="loginOut" onclick="goLoginOut();">点击登陆</div>
+                <div id="myicon" class="homeIcon hide">
+                    <img id="myheadericon" class="full" src="./images/daultheadicon.jpg" >
+                </div>
+            </div>
+
+            <div class="searchItem"  style="height: 70px;">
+                <div class="searchItemIconDiv" style="margin-top: 8px;" onclick="goMyOrders();">
+                    <img class="searchItemIcon" src="./images/myit1.png">
+                </div>
+
+                <div class="myaccount" onclick="goMyOrders();">
+                    <div class="myAccountTitle">我的账户</div>
+                    <div class="myhomebalance" id="myhomebalance">0书币/0书券</div>
+                </div>
+
+                <div class="rechargeBt" onclick="goBuyHome();checkCharge(1);">
+                    充值
+                </div>
+            </div>
+
+            <div class="searchItem hide" onclick="goMyOrders();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/myit1.png">
+                </div>
+                <div class="searchItemTitle">我的订单</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" style="height: 70px;">
+                <div class="searchItemIconDiv" style="margin-top: 8px;" onclick="goMyOrders();">
+                    <img class="searchItemIcon" src="./images/myit2.png">
+                </div>
+
+                <div class="myaccount" >
+                    <div class="myAccountTitle">VIP会员</div>
+                    <div class="myhomebalance" id="myvip">未开通</div>
+                </div>
+
+                <div class="rechargeBt" style="background: #f5c607;box-shadow: 0px 2px 10px 3px #fff;" onclick="goBuyHome();checkCharge(2);">
+                    开通
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goCheckPage();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/sr2.png">
+                </div>
+                <div class="searchItemTitle">签到</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goMyMessage();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/myit3.png">
+                </div>
+                <div class="searchItemTitle">消息</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goMySetting();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/myit4.png">
+                </div>
+                <div class="searchItemTitle">设置</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="setReadModel();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/myit5.png">
+                </div>
+                <div class="searchItemTitle" id="readmodeltitle">夜间模式</div>
+                <div class="goIconDiv">
+                    <img class="closeopenicon" id="readmodelicon" src="./images/close.png">
+                </div>
+            </div>
+
+            <!--
+            <div class="searchItem">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/myit6.png">
+                </div>
+                <div class="searchItemTitle">我喜欢的</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+            -->
+
+            <div class="searchItem">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/myit7.png">
+                </div>
+                <div class="searchItemTitle">联系我们</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goAbout();">
+                <div class="searchItemIconDiv">
+                    <img class="searchItemIcon" src="./images/myit8.png">
+                </div>
+                <div class="searchItemTitle">关于微阅</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="exit hide" id="myexit" onclick="exit();">
+                安全退出
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footerItem">
+            <div><img class="footerItemIcon" src="./images/t11.png" onclick="goInvestHome();"></div>
+            <div class="footerItemTitle ">书架</div>
+        </div>
+        <div class="footerItem">
+            <div><img class="footerItemIcon" src="./images/t22.png" onclick="goLoanHome();"></div>
+            <div class="footerItemTitle ">书城</div>
+        </div>
+        <div class="footerItem" onclick="goAAOrder();">
+            <div><img class="footerItemIcon" src="./images/t55.png"></div>
+            <div class="footerItemTitle">拼单</div>
+        </div>
+
+        <div class="footerItem" onclick="goRaidersHome();">
+            <div><img class="footerItemIcon" src="./images/t33.png"></div>
+            <div class="footerItemTitle ">发现</div>
+        </div>
+        <div class="footerItem">
+            <div><img class="footerItemIcon" src="./images/t4.png"></div>
+            <div class="footerItemTitle footerItemTitleCheck">我的</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--选择图片或拍照-->
+<div class="headerBody hide" style="z-index: 1000000000000099; " id="captionPhoto">
+    <div class="headerBody" style=" top:50%;">
+        <div class="filterDivBG full" style="opacity:0.85;"></div>
+        <div class="abFull" style="background: #848A89;">
+            <img src="./images/loading.gif" id="loading" class="loading">
+
+            <div class="lijiOrderWenzi30" onclick="takePhotoUpload();">
+                拍照
+            </div>
+            <div class="lijiOrderWenzi20" onclick="pickPhotoUpload();">
+                从手机相册选择
+            </div>
+            <div class="lijiOrderWenzi10" onclick="hide('captionPhoto');">
+                取消
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--我的信息-->
+<div id="myInfo" class="abFull hide">
+    <div class="homeTitle" >
+        <div onclick="goBack();"  class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        个人信息
+    </div>
+    <div class="headerBody" style="top:68px;">
+
+        <div class="myHomeScroller">
+
+            <div class="myBody2">
+
+                <div class="myBody2Item " onclick="goCaptionPhoto();">
+
+                    <div class="settingTitle">修改头像</div>
+                    <img src="./images/youjiantou.png" class="bodyIcon4">
+                </div>
+            </div>
+
+            <div class="myBody2">
+
+                <div class="myBody2Item " onclick="goChangeName();">
+
+                    <div class="settingTitle">修改用户名</div>
+                    <img src="./images/youjiantou.png" class="bodyIcon4">
+                </div>
+            </div>
+
+            <div class="myBody2">
+
+                <div class="myBody2Item " onclick="goChangePassword();">
+
+                    <div class="settingTitle">修改密码</div>
+                    <img src="./images/youjiantou.png" class="bodyIcon4">
+                </div>
+            </div>
+
+            <div class="myBody2">
+
+                <div class="myBody2Item noborder" onclick="forgetPassword();">
+
+                    <div class="settingTitle">忘记密码</div>
+                    <img src="./images/youjiantou.png" class="bodyIcon4">
+                </div>
+            </div>
+
+            <div class="exit" onclick="exit();">
+                安全退出
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--我的设置-->
+<div id="mySetting" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        设置
+    </div>
+    <div class="headerBody">
+
+        <div class="myHomeScroller" style="background: #f2f2f2;">
+
+            <div class="searchItem" onclick="setAutoBuyModel();">
+                <div class="settingTitle">自动购买</div>
+                <div class="goIconDiv">
+                    <img class="closeopenicon" src="./images/close.png" id="autobuyicon">
+                </div>
+            </div>
+
+            <div class="searchItem hide">
+
+                <div class="settingTitle">2G／3G／4G播放／下载语音</div>
+                <div class="goIconDiv">
+                    <img class="closeopenicon" src="./images/close.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="setSychModel();">
+
+                <div class="settingTitle">同步阅读进度</div>
+                <div class="goIconDiv">
+                    <img class="closeopenicon" src="./images/open.png" id="readprogressicon">
+                </div>
+            </div>
+
+
+            <div class="searchItem" style="margin-top: 7px;">
+                <div class="settingTitle">闭屏设置</div>
+            </div>
+            <div class="searchItem" onclick="setCloseScreen(0);">
+                <div class="settingTitle">系统设置</div>
+                <div class="goIconDiv">
+                    <img class="listCheckIcon hide" src="./images/listcheck.png" id="csc_0">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="setCloseScreen(1);">
+
+                <div class="settingTitle">5分钟</div>
+                <div class="goIconDiv">
+                    <img class="listCheckIcon hide" src="./images/listcheck.png" id="csc_1">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="setCloseScreen(2);">
+
+                <div class="settingTitle">15分钟</div>
+                <div class="goIconDiv">
+                    <img class="listCheckIcon hide" src="./images/listcheck.png" id="csc_2">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="setCloseScreen(3);">
+
+                <div class="settingTitle">30分钟</div>
+                <div class="goIconDiv">
+                    <img class="listCheckIcon" src="./images/listcheck.png" id="csc_3">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--我的订单-->
+<div id="myOrderHome" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        我的订单
+    </div>
+    <div class="headerBody">
+
+        <div class="myHomeScroller" style="background: #f2f2f2;">
+            <div class="searchItem" onclick="goMyRecharges();">
+                <div class="settingTitle">充值记录</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goMyConsume();">
+                <div class="settingTitle">订阅记录</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goMyReward();">
+                <div class="settingTitle">打赏记录</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+            <div class="searchItem" onclick="goMyVipOrderList();">
+                <div class="settingTitle">畅读订单</div>
+                <div class="goIconDiv">
+                    <img class="goIcon" src="./images/goicon.png">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--我的充值记录-->
+<div id="myRecharges" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        充值记录
+    </div>
+    <div class="headerBody" id="myRechargesScroller" style="background: #fff;">
+
+        <div class="myHomeScroller" id="myRechargesList">
+            <div class="rechargeItem">
+                <div>
+                <div class="rechargeNo">123456878913</div>
+                <div class="rechargeAccount">￥50</div>
+                </div>
+
+                <div>
+                <div class="rechargeWay">微信支付</div>
+                <div class="rechargeDate">2017-12-24 17:34:32</div>
+                </div>
+            </div>
+
+            <div class="rechargeItem">
+                <div>
+                    <div class="rechargeNo">123456878913</div>
+                    <div class="rechargeAccount">￥50</div>
+                </div>
+
+                <div>
+                    <div class="rechargeWay">微信支付</div>
+                    <div class="rechargeDate">2017-12-24 17:34:32</div>
+                </div>
+            </div>
+
+            <div class="rechargeItem">
+                <div>
+                    <div class="rechargeNo">123456878913</div>
+                    <div class="rechargeAccount">￥50</div>
+                </div>
+
+                <div>
+                    <div class="rechargeWay">微信支付</div>
+                    <div class="rechargeDate">2017-12-24 17:34:32</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--我的消费记录-->
+<div id="myConsume" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        消费记录
+    </div>
+    <div class="headerBody" id="myConsumeScroller">
+
+        <div class="myHomeScroller" id="myConsumeList">
+            <div class="rewardItem">
+                <div class="rewardTitle">购买我想和你好好的 第一章</div>
+
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+            <div class="rewardItem">
+                <div class="rewardTitle">购买我想和你好好的 第二章</div>
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+            <div class="rewardItem">
+                <div class="rewardTitle">购买我想和你好好的 第三章</div>
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--我的打赏记录-->
+<div id="myReward" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        打赏记录
+    </div>
+    <div class="headerBody" id="myRewardScroller" style="background: #fff;">
+
+        <div class="myHomeScroller" id="myRewardList">
+            <div class="rewardItem">
+                <div class="rewardTitle">我想和你好好的</div>
+
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+            <div class="rewardItem">
+                <div class="rewardTitle">我想和你好好的</div>
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+            <div class="rewardItem">
+                <div class="rewardTitle">我想和你好好的</div>
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--我的畅读记录-->
+<div id="myVipOrder" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        畅读订单
+    </div>
+    <div class="headerBody" id="myVipOrderScroller">
+
+        <div class="myHomeScroller" id="myVipOrderList">
+            <div class="rewardItem">
+                <div class="rewardTitle">我想和你好好的</div>
+
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+            <div class="rewardItem">
+                <div class="rewardTitle">我想和你好好的</div>
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+            <div class="rewardItem">
+                <div class="rewardTitle">我想和你好好的</div>
+                <div class="rewardDate">2017-12-12</div>
+                <div class="rewardCount">100书币</div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--我的消息-->
+<div id="myMessage" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        我的消息
+    </div>
+    <div class="headerBody" style="background: #fff;">
+        <div class="myMessageTitleItems">
+            <div class="myMessageTitleItem myMessageTitleItemChecked" id="msg_1" onclick="findMyMsg(1);">提醒</div>
+            <div class="myMessageTitleItem" id="msg_2" onclick="findMyMsg(2);">通知</div>
+            <div class="myMessageTitleItem" id="msg_3" onclick="findMyMsg(3);">推荐</div>
+        </div>
+
+        <div class="headerBody" id="myMessageScroller" style="top: 32px;">
+            <div class="myHomeScroller" id="myMessageList">
+                <div class="messageItem">
+                    <div class="messageDate">2015-07-15 10:04</div>
+
+                    <div class="messageContentDiv">
+                        <div class="myMessageTitle">718暑期大促销开始了</div>
+                        <div class="messageContent">718暑期大促销开始了，满百送百，赶快行动吧</div>
+                    </div>
+                </div>
+
+                <div class="messageItem">
+                    <div class="messageDate">2015-07-15 10:04</div>
+
+                    <div class="messageContentDiv">
+                        <div class="myMessageTitle">718暑期大促销开始了</div>
+                        <div class="messageContent">718暑期大促销开始了，满百送百，赶快行动吧</div>
+                    </div>
+                </div>
+
+
+                <div class="messageItem">
+                    <div class="messageDate">2015-07-15 10:04</div>
+
+                    <div class="messageContentDiv">
+                        <div class="myMessageTitle">718暑期大促销开始了</div>
+                        <div class="messageContent">718暑期大促销开始了，满百送百，赶快行动吧</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--阅读器-->
+<div id="myReader" class="abFull hide">
+    <div class="fixedHomeTitle hide" id="myReaderTitle">
+        <div onclick="goBack();" class="headerIconDiv1" style="left: 5px;"><img src="./images/rdr7.png"
+                                                                                         class="headerIcon1"></div>
+        <div onclick="goInvestShare();" class="headerIconDiv hide" style="right: 70px;top: 10px;"><img src="./images/rdr5.png"
+                                                                                                  style="height: 21px;"
+                                                                                                  class="headerIcon3">
+        </div>
+        <div onclick="goInvestShare();" class="headerIconDiv hide" style="right: 15px;top: 10px;"><img src="./images/rdr6.png"
+                                                                                                  class="headerIcon3">
+        </div>
+    </div>
+    <div class="abFull readerbg" id="bookContent">
+        <div class="readerBookTitle" id="readerTitle">我想和你好好的</div>
+        <div class="readerChapterTitle" id="readerChapter">第1章 倘若有来生</div>
+
+        <div class="readercontent" id="readercontent" >
+
+        </div>
+    </div>
+
+    <div class="abFull readerbg hide" id="bookContent1"></div>
+
+    <div class="fixedFooter hide" id="myReaderOpt">
+
+        <div class="readerChapters">
+            <div class="preChapter" onclick="changeChapter(-1);">上一章</div>
+            <div class="readerProgress" id="readerProgress">
+                <div class="readedProgress" id="readedProgress"></div>
+                <div class="notReadedProgress" id="notReadedProgress"></div>
+                <div class="progressButton" id="progressButton"></div>
+            </div>
+            <div class="nextChapter" onclick="changeChapter(1);">下一章</div>
+        </div>
+        <div class="footer1">
+            <div class="footerItem1" onclick="goReaderChapters();">
+                <div><img class="footerItemIcon1" src="./images/rdr1.png"></div>
+                <div class="footerItemTitle1 ">目录</div>
+            </div>
+            <div class="footerItem1" onclick="setReadModel();">
+                <div><img class="footerItemIcon1" src="./images/rdr2.png"></div>
+                <div class="footerItemTitle1 ">夜间模式</div>
+            </div>
+
+            <div class="footerItem1" onclick="add2BookShelf();">
+                <div><img class="footerItemIcon1" src="./images/rdr3.png"></div>
+                <div class="footerItemTitle1 ">加入书架</div>
+            </div>
+            <div class="footerItem1" onclick="setHome();">
+                <div><img class="footerItemIcon1" src="./images/rdr4.png"></div>
+                <div class="footerItemTitle1 ">设置</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="readerSetFooter hide" id="readerSetFooter">
+
+        <div class="readerChapters">
+            <div class="preChapter1" style="line-height: 42px;"><img src="./images/lights.png" class="minLight"></div>
+            <div class="readerProgress1">
+                <div class="readedProgress" id="readedProgress1">
+
+                </div>
+                <div class="notReadedProgress" id="notReadedProgress1"></div>
+                <div class="progressButton" id="progressButton1">
+                </div>
+            </div>
+            <div class="nextChapter1" style="line-height: 46px;"><img src="./images/lights.png" class="maxLight"></div>
+        </div>
+
+        <div class="fontSizeOptDiv">
+            <div class="fontSizeAdd" onclick="setFontSize(0);">
+                <div class="fontsizeBt">A-</div>
+            </div>
+            <div class="fontSizeContent" id="fontSizeContent">16</div>
+            <div class="fontSizeAdd" onclick="setFontSize(1);">
+                <div class="fontsizeBt">A+</div>
+            </div>
+        </div>
+
+        <div class="readerBgItems">
+            <div class="readerBgItem" onclick="setBG(1);">
+                <div class="readerBgItemBt bgColor1"></div>
+            </div>
+            <div class="readerBgItem" onclick="setBG(2);">
+                <div class="readerBgItemBt bgColor2"></div>
+            </div>
+            <div class="readerBgItem" onclick="setBG(3);">
+                <div class="readerBgItemBt bgColor3"></div>
+            </div>
+            <div class="readerBgItem" onclick="setBG(4);">
+                <div class="readerBgItemBt bgColor4"></div>
+            </div>
+        </div>
+
+        <div class="readerAnimotesItems">
+            <div class="readerAnimotesItem" onclick="setEffectModel(3);" >仿真</div>
+            <div class="readerAnimotesItem" onclick="setEffectModel(2);" >滑动</div>
+            <div class="readerAnimotesItem" onclick="setEffectModel(4);" >覆盖</div>
+            <div class="readerAnimotesItem" onclick="setEffectModel(1);" style="margin-right: 0px;">无</div>
+        </div>
+
+        <div class="moreSet" onclick="goMySetting();">更多设置>></div>
+
+        <div class="autoReaderBt hide">自动阅读<img src="./images/autoreader.png" class="autoReaderIcon"></div>
+    </div>
+</div>
+
+
+<!--阅读器书签、目录、详情-->
+<div id="myReaderChapters" class="abFull bgColor1 hide" style="z-index: 1000;">
+    <div class="aboveLayerBG"></div>
+
+    <div class="readerBlank" onclick="hide('myReaderChapters');"></div>
+
+    <div class="readerInfoDiv">
+        <!--目录-->
+        <div class="abFull hide bgColor1" id="readerInfoDiv">
+            <div class="readerHeader">
+                <div class="readerHeaderItem readerHeaderItemChecked">目录</div>
+                <div class="readerHeaderItem" onclick="readerBookMarker();">书签</div>
+                <div class="readerHeaderItem" onclick="bookInfo4Read();">详情</div>
+            </div>
+
+            <div class="readerChapterContentDiv bgColor1">
+                <div class="bookChaptersDiv  bgColor11" style="margin-top: 3px;">
+                    <div class="bookChaptersTitle" id="chapterListName1">重相逢</div>
+                    <div class="bookChaptersCount" id="chapterListCount1">共37章</div>
+
+                    <div class="bookChaptersAsc" id="readerBookChaptersAsc" onclick="setAscDesc1();">
+                        <div class="bookChaptersAscIconDiv">
+                            <img src="./images/asc.png" class="bookChaptersAscIcon">
+                        </div>
+                        <div class="bookChaptersAscTitle">
+                            正序
+                        </div>
+                    </div>
+
+                    <div class="bookChaptersAsc hide" id="readerBookChaptersDesc" onclick="setAscDesc1();">
+                        <div class="bookChaptersAscIconDiv">
+                            <img src="./images/desc.png" class="bookChaptersAscIcon">
+                        </div>
+                        <div class="bookChaptersAscTitle">
+                            倒序
+                        </div>
+                    </div>
+                </div>
+
+                <div class="headerBody" id="readerChaptersListScroller" style="top: 100px;" onclick="goReader4ChaperList();">
+                    <div class="investScroller bgColor1" id="readerChaptersListContent">
+                        <div class="bookChaptersItem bgColor11">
+                            第一章 喜多林
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第二章 喜多林
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第三章 喜多林
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第四章 喜多林
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第五章 喜多林
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第六章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第七章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第八章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第九章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第十章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第十一章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第十二章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第十三章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+                        <div class="bookChaptersItem bgColor11">
+                            第十四章 喜多林
+                            <img src="./images/lockedicon.png" class="lockIcon">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--书签-->
+        <div class="abFull hide bgColor1" id="readerBookMarker">
+            <div class="readerHeader">
+                <div class="readerHeaderItem" onclick="chapterList4Read();">目录</div>
+                <div class="readerHeaderItem readerHeaderItemChecked">书签</div>
+                <div class="readerHeaderItem" onclick="bookInfo4Read();">详情</div>
+            </div>
+
+            <div class="readerChapterContentDiv bgColor1">
+                <div class="headerBody" id="readerBookMarkerListScroller" style="top: 51px;" >
+                    <div class="investScroller bgColor1" >
+                        <div class="bookMarkerItem">
+                            <div class="bookMarkerHeader">
+                                <div class="bookMarkerHeaderTitle">
+                                    第5章   君子报仇，十年不晚
+                                </div>
+                                <div class="bookMarkerHeaderTime">
+                                    1分钟前
+                                </div>
+                            </div>
+
+                            <div class="bookMarkerContent">
+                                放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里问我下...
+                            </div>
+                        </div>
+
+                        <div class="bookMarkerItem">
+                            <div class="bookMarkerHeader">
+                                <div class="bookMarkerHeaderTitle">
+                                    第5章   君子报仇，十年不晚
+                                </div>
+                                <div class="bookMarkerHeaderTime">
+                                    1分钟前
+                                </div>
+                            </div>
+
+                            <div class="bookMarkerContent">
+                                放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里问我下...
+                            </div>
+                        </div>
+
+                        <div class="bookMarkerItem">
+                            <div class="bookMarkerHeader">
+                                <div class="bookMarkerHeaderTitle">
+                                    第5章   君子报仇，十年不晚
+                                </div>
+                                <div class="bookMarkerHeaderTime">
+                                    1分钟前
+                                </div>
+                            </div>
+
+                            <div class="bookMarkerContent">
+                                放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里问我下...
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--详情-->
+        <div class="abFull bgColor1" id="readerBookDetail">
+            <div class="readerHeader">
+                <div class="readerHeaderItem" onclick="chapterList4Read();">目录</div>
+                <div class="readerHeaderItem" onclick="readerBookMarker();">书签</div>
+                <div class="readerHeaderItem readerHeaderItemChecked">详情</div>
+            </div>
+
+            <div class="readerChapterContentDiv bgColor1">
+                <div class="headerBody" id="readerBookDetailListScroller" style="top: 51px;" >
+                    <div class="investScroller bgColor1" >
+                        <div class="readerBookIconDiv">
+                            <img src="./images/mybook1.jpg" class="readerBookIcon" id="readBookDetailListIcon">
+                        </div>
+
+                        <div class="readerBookDetailTitle" id="readBookDetailListName">
+                            我想和你好好的
+                        </div>
+
+                        <div class="readerBookAuthorType">
+                            <div class="readerBookAuthor" id="readBookDetailListAuthor">
+                                柳花流
+                            </div>
+                            <div class="readerBookType" id="readBookDetailListType">
+                                都市言情
+                            </div>
+                        </div>
+
+                        <div class="readerBookDetailDesc" id="readBookDetailListDescp">
+                            放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下...放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下。放飞自我之作，作者的脑洞，到哪里，情节就到哪里，不要问我情节就到哪里，不要问我下。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<!--我的最爱-->
+<div id="myLoves" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        我的收藏
+    </div>
+    <div class="headerBody" id="myLovesScroller">
+
+        <div class="myHomeScroller" id="myLovesList">
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="login" class="abFull hide abovelayer">
+    <div class="aboveLayerBG"></div>
+    <div class="popBlank" onclick="hide('login');"></div>
+    <div class="abovelayercontent">
+        <div class="closeAbove" onclick="hide('login');">X</div>
+        <div class="myServiceProject">
+            <div class="loginicondiv">
+                <img class="loginicon" src="./images/wxlogin.png">
+            </div>
+            <div class="gonggonglouti" style="margin-top: 20px;">
+                账号太多记不住？
+            </div>
+
+            <div class="gonggonglouti">
+                微信一键登录，更安全，更方便
+            </div>
+
+            <div class="loginBtDiv" onclick="regist(this);">
+                微信登录
+            </div>
+
+
+            <div class="registeAndForget">
+                阅读并接受《圈内人使用条约与规范》
+            </div>
+
+            <div class="otherlogin" onclick="goLogin4Phone();">手机号码登录...</div>
+        </div>
+    </div>
+</div>
+
+
+<div id="userProtecle" class="abFull hide abovelayer" style="z-index: 2147483647;">
+
+    <div class="aboveLayerBG"></div>
+    <div class="abovelayercontent" id="userProtecleScroller" style="overflow: hidden;">
+
+
+        <div>
+            <div class="homeTitle" style="border: none;">用户协议</div>
+            <div class="myHomeScroller thirdTitle " style="margin: 15px; background: #ffffff;">
+                <div class="oneTitel"> 尊敬的用户，请认真阅读天天约惠用户注册协议，并完成注册</div>
+                <div class="towTitle">一、总则</div>
+                <div>1、“天天约惠”手机客户端（以下简称天天约惠）是由四川芯众惠网络技术有限公司提供，其运营权及所有权归属四川芯众惠网络技术有限公司。</div>
+                <div>2、用户在注册使用天天约惠之前，应当仔细阅读《天天约惠用户注册协议》（以下简称本协议）的全部内容，并重点理解以下划线、黑体字等形式着重标注的条款。用户必须同意遵守本协议的全部条款，方能完成注册。
+                </div>
+                <div>3、本协议具有合同效力，自用户点击“我已阅读并同意以上条款”并注册成功时在天天约惠与用户之间产生法律效力，双方应当按照本协议的规定履行各自的权利义务。</div>
+                <div>4、本协议的一切著作权归属天天约惠，天天约惠有权依照需要更改、删减、增补协议内容，并不承担向用户通知的义务，修改部分具有同原本等同的法律效力。天天约惠保留本协议的解释权。</div>
+
+                <div class="towTitle">二、用户注册</div>
+                <div>1、用户应当承诺具有完全民事权利能力和完全民事行为能力。若用户不具备以上法律资格，应当经法定代理人同意或由法定代理人代为注册。</div>
+                <div>
+                    2、用户应当按照注册页面要求提供真实姓名、所在城市、联系方式（包括手机号码、电子邮箱）、银行卡号，并保证所提供的信息真实、完整、准确。若用户存在盗用他人真实信息进行注册、冒用他人银行卡或其他违规行为，天天约惠有权停止服务、封停账号。若因用户违规行为给天天约惠造成损失，天天约惠有权依照法律途径追究其法律责任。
+                </div>
+                <div>
+                    3、用户获得相应的账号和密码即为注册成功。用户应当妥善保管自己的账号和密码，不得随意出借、转让或用作其他不法行为。原则上，用户对自己账号下的一切交易行为承担法律责任，但因账号被盗用或其他不能归咎于用户的原因造成损失，用户应当及时通知天天约惠。
+                </div>
+                <div>4、用户在注册时可以选择是否关注天天约惠官方微博或微信公众号，以及是否接受天天约惠短信或邮箱推送信息。</div>
+                <div>5、用户承诺注册行为完全符合相关法律法规的规定，并不以破坏天天约惠交易秩序为目的。</div>
+
+                <div class="towTitle">三、用户信息保护</div>
+                <div>1、天天约惠承诺仅获取用户注册时填写的个人资料，在其他任何时候不以任何方式收集用户信息。</div>
+                <div>2、天天约惠承诺严密保护用户信息，用户所填写的资料仅用于天天约惠提供的服务，并在使用中采取保密技术，保证不外泄。但经用户同意向外提供或依照法律法规的要求向行政机关、司法机关提供信息除外。</div>
+                <div>3、天天约惠要求用户填写手机号码进行注册，主要原因有二：一、当用户忘记密码时，用户通过注册时的手机号码获取验证码重置密码。二、平台发现用户消费付款异常时，可联系到用户，提供更好的服务体验。
+                </div>
+                <div>4、天天约惠承诺当用户注销账号后，自动清除该账号一切信息及历史记录。</div>
+
+                <div class="towTitle">四、天天约惠服务</div>
+                <div>1、目前天天约惠为用户提供免费服务，但天天约惠保留未来收取服务费用的权利。</div>
+                <div>2、天天约惠与银联商务合作对接，只提供商家折扣信息，支持预订，无任何支付行为，不提供支付平台。</div>
+                <div>3、用户可在天天约惠浏览商家提供的折扣信息，并可预订某一项或多项折扣，预订时需输入银行卡号，在预订后24小时内到商家所在地使用该银行卡刷卡消费方能享受折扣待遇。天天约惠承诺不绑定任何银行卡号。
+                </div>
+                <div>4、用户通过天天约惠享受折扣待遇后，可在天天约惠平台对商家进行评分，并可选择发布文字、图片评价。评价发布后24小时内可修改，超过24小时可追加评价。</div>
+                <div>5、用户有权参加天天约惠举办的各类活动，享受各种优惠。</div>
+                <div>6、用户账号唯一确定，不可更改，只能注销，但用户有权随时更改登录密码以及个人资料。</div>
+                <div>7、用户忘记账号、密码时，可通过注册时选择的验证方式找回。用户账号、密码被盗用，应当及时通知天天约惠。</div>
+
+                <div class="towTitle">五、用户的权利、义务</div>
+                <div>1、用户有权依照本协议的约定接受天天约惠提供的服务。</div>
+                <div>2、用户发现天天约惠提供的商家在产品质量、服务态度存在问题，应当争取与商家协商解决，天天约惠承诺提供商家真实名称、地址、联系方式，积极协助。</div>
+                <div> 3、用户有权随时注销账号，停止接受服务。</div>
+                <div>4、用户不得在天天约惠发布以下言论：</div>
+                <div>4.1、违反宪法确定的基本原则的；</div>
+                <div>4.2、危害国家安全，泄漏国家机密，颠覆国家政权，破坏国家统一的；</div>
+                <div>4.3、损害国家荣誉和利益的；</div>
+                <div>4.4、煽动民族仇恨、民族歧视，破坏民族团结的；</div>
+                <div>4.5、破坏国家宗教政策，宣扬邪教和封建迷信的；</div>
+                <div>4.6、散布谣言，扰乱社会秩序，破坏社会稳定的；</div>
+                <div>4.7、散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪的；</div>
+                <div>4.8、侮辱或者诽谤他人，侵害他人合法权益的；</div>
+                <div>4.9、煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；</div>
+                <div>4.10、以非法民间组织名义活动的；</div>
+                <div>4.11、含有法律、行政法规禁止的其他内容的。</div>
+                <div>5、用户不得恶意干扰天天约惠正常运行，不得破坏交易秩序。</div>
+                <div>6、用户不得利用天天约惠盗取个人信息、商业秘密，从事非法活动。</div>
+                <div>7、用户不得将有关干扰、破坏或限制任何计算机软件、硬件或通讯设备功能的软件病毒或其他计算机代码、档案和程序之资料，加以上载、发布、发送电子邮件或以其他方式传送。</div>
+                <div>8、用户不得企图规避天天约惠平台的安全设置或网络系统，包括获取用户不应获取的数据，登录未经明确授权的服务器或帐户，或采用运行端口扫描等方式窥探其他网络的安全措施。</div>
+                <div>9、用户不得以导致天天约惠的计算机系统或设施承受不合理负载的方式获取天天约惠提供的服务或网站信息，或进行可能导致此类情况出现的行为。</div>
+                <div>10、用户不得实施任何形式的网络监控，从而截取与自身无关的信息。</div>
+
+                <div class="towTitle">六、天天约惠的权利、义务</div>
+                <div>1、天天约惠有权审查注册资格、注册信息，发现不具备注册资格或存在盗用他人信息注册的情况，有权拒绝注册，已经注册的用户将停止服务、封停账号。</div>
+                <div>2、天天约惠有权依据商家的委托对相应的折扣信息作出调整。但若调整发生用户预订该折扣之后，对该用户仍适用调整之前的折扣待遇。</div>
+                <div>3、天天约惠保留终止、中断、更改服务内容的权利，但承诺将相关信息予以公告。</div>
+                <div>4、天天约惠有权删除用户的不当言论，由此造成的一切后果由用户独自承担。发现用户有违规行为时，天天约惠有权停止服、封停账号。</div>
+                <div>5、天天约惠会尽全力维护平台的正常运行，以向用户提供持续、稳定、安全、顺畅的服务。但对服务页面进行改版、升级网站系统、增加服务功能等须中断服务的操作时，有权暂时中断服务。</div>
+
+                <div class="towTitle">七、责任限制</div>
+                <div>
+                    1、不论在何种情况下，天天约惠对由于信息网络设备维护、信息网络连接故障、电脑、通讯或其他系统的故障、电力故障、罢工、劳动争议、暴乱、起义、骚乱、生产力或生产资料不足、火灾、洪水、风暴、爆炸、战争、政府行为、司法行政机关的命令、其他不可抗力或第三方的不作为而造成的不能服务或延迟服务不承担责任。
+                </div>
+                <div>2、天天约惠对用户的一切言论免责，对因用户原因造成的任何损失免责。</div>
+                <div>3、天天约惠对商家提供的产品质量、服务态度、商业信誉不承担责任。</div>
+                <div>4、天天约惠对因网络迟延或其他不能归结于天天约惠的原因造成的用户损失不承担责任，但承诺积极协助用户解决。</div>
+                <div class="towTitle">八、知识产权</div>
+                <div>1、天天约惠所包含的全部智力成果包括但不限于数据库、网站设计、文字和图表、软件、照片、录像、音乐、声音及其前述组合，软件编译、相关源代码和软件 (包括小应用程序和脚本)
+                    的知识产权权利均归天天约惠所有。
+                </div>
+                <div>
+                    2、用户接受本协议则视为同意将其在天天约惠以任何形式发布的任何文字、图片、视频等的财产性权利（包括但不限于复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权等）无偿独家许可给天天约惠使用，天天约惠有权单独起诉并获得全部赔偿。本协议已经构成《著作权法》第二十五条所规定的书面协议，其效力及于用户在百度糯米平台发布的任何受著作权法保护的作品内容，无论该内容形成于本协议签订前还是本协议签订后。
+                </div>
+                <div class="towTitle">九、违约责任</div>
+                <div>1、用户或天天约惠违反本协议的任何条款给对方造成损失，应当承担相应的赔偿责任。</div>
+                <div>2、用户存在盗用他人信息进行注册，或恶意干扰天天约惠交易秩序，或利用天天约惠进行不法行为，天天约惠有权停止服务、封停账号。</div>
+                <div>3、用户恶意诋毁天天约惠或商家信誉，需公开道歉。天天约惠有权停止对其提供服务。</div>
+                <div class="towTitle">十、争议解决</div>
+                <div>发生争议时，用户及天天约惠双方应当友好协商解决。协商不成时，任何一方可以向四川芯众惠网络技术有限公司所在地基层人民法院提起诉讼。</div>
+                <div style="height: 30px;"></div>
+            </div>
+        </div>
+
+        <div class="closeAbove" onclick="hide('userProtecle');">X</div>
+    </div>
+</div>
+
+<div id="regist" class="abFull hide" >
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        登录
+    </div>
+    <div class="headerBody" style="background: #fff;top:41px;">
+
+        <div class="loginHomeScroller" >
+
+            <div class="gonggonglouti1">
+                <input id="loginName" type="tel" value="" class="inputText1 telspace" placeholder="手机号码">
+            </div>
+
+            <div class="gonggonglouti1" >
+                <input id="password" type="password" value="" class="inputText1 telspace" placeholder="密码">
+            </div>
+
+
+            <div class="loginBtDiv aboveCommBt" onclick="login();">
+                登录
+            </div>
+
+            <div class="login4Psw" onclick="goBack();">手机验证码登录</div>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="login4Phone" class="abFull hide" >
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        登录
+    </div>
+    <div class="headerBody" style="background: #fff;top:41px;">
+
+        <div class="loginHomeScroller" >
+
+            <div class="gonggonglouti1">
+                <input id="registTel" type="tel" value="" class="inputText1 telspace" placeholder="手机号码">
+            </div>
+
+            <div class="gonggonglouti1" >
+                <input id="validateCode" type="tel" value="" class="inputText1 telspace" placeholder="验证码">
+
+                <div class="codeBt" id="codeBt" onclick="getValidateCode();">获取验证码</div>
+            </div>
+
+            <div class="loginBtDiv aboveCommBt" id="bindbt" onclick="regist();">
+                登录
+            </div>
+
+            <div class="login4Psw" onclick="go4Regist();">账号密码登录</div>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="setPassword" class="abFull hide" >
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        登录
+    </div>
+    <div class="headerBody">
+
+        <div class="loginHomeScroller" >
+            <div class="gonggonglouti1">
+                <input id="registPassword" type="text" value="" class="inputText1 telspace" placeholder="设置密码">
+            </div>
+
+            <div class="loginBtDiv aboveCommBt" onclick="setPassword();">
+                提交
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="forgetPassword" class="abFull hide abovelayer">
+    <div class="aboveLayerBG"></div>
+    <div class="abovelayercontent">
+        <div class="closeAbove" onclick="hide('forgetPassword');">X</div>
+        <div class="myServiceProject">
+            <div class="gonggonglouti1">
+                <input id="yourPhone" type="tel" value="" class="inputText1 telspace" placeholder="您的电话号码">
+
+                <div class="codeBt" id="codeBt1" onclick="getValidateCode1();">获取验证码</div>
+            </div>
+
+            <div class="gonggonglouti1">
+                <input id="validateCode4Password" type="tel" value="" class="inputText1 telspace" placeholder="短信验证码">
+            </div>
+
+            <div class="loginBtDiv aboveCommBt" onclick="go4SetPassword();">
+                提交
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="changePassword" class="abFull hide abovelayer">
+    <div class="aboveLayerBG"></div>
+    <div class="abovelayercontent">
+        <div class="closeAbove" onclick="hide('changePassword');">X</div>
+        <div class="myServiceProject">
+            <div class="gonggonglouti1">
+                <input id="oldPassword" type="password" value="" class="inputText1" placeholder="输入原始密码">
+            </div>
+            <div class="gonggonglouti1">
+                <input id="newPassword2" type="password" value="" class="inputText1" placeholder="输入新密码">
+            </div>
+
+            <div class="gonggonglouti1">
+                <input id="newPassword3" type="password" value="" class="inputText1" placeholder="确认新密码">
+            </div>
+
+            <div class="loginBtDiv aboveCommBt" onclick="changePassword();">
+                提交
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="changeName" class="abFull hide abovelayer">
+    <div class="aboveLayerBG"></div>
+    <div class="abovelayercontent">
+        <div class="closeAbove" onclick="hide('changeName');">X</div>
+        <div class="myServiceProject">
+            <div class="gonggonglouti1">
+                <input id="changeUsername" type="text" value="" class="inputText1" placeholder="输入新的用户名">
+            </div>
+
+
+            <div class="loginBtDiv aboveCommBt" onclick="changeName();">
+                提交
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="about" class="abFull hide">
+    <div class="homeTitle">
+        <div onclick="goBack();" class="headerIconDiv1"><img src="./images/rdr7.png" class="headerIcon1"></div>
+        关于我们
+    </div>
+    <div class="headerBody" style="text-align: center;margin-left: auto;margin-right: auto;background: #fff;">
+
+        <img src="./images/ic_launcher.png" class="aboutIcon">
+
+        <div class="aboutVersion">版本号V1.0.0</div>
+
+        <div class="aboutDesc">
+            微阅书城是一款小说阅读APP。
+        </div>
+        <div class="aboutwww">官网地址:&nbsp;&nbsp;www.iweiyue.com</div>
+        <div class="aboutweixin">公众号码:&nbsp;&nbsp;iweiyue</div>
+        <div class="aboutweixin">客服QQ:&nbsp;&nbsp;78730710</div>
+        <a href="tel:0835-8016688">
+            <div class="aboutweixin">客服电话:&nbsp;&nbsp;028-85113033</div>
+        </a>
+    </div>
+</div>
+
+</div>
+
+<div id="loadingC" class="abFull hide" style="opacity: 1;position: absolute;z-index: 99999999999999;"
+     onclick="forceHideLoding();">
+    <div class="abFull" style="background: black;opacity: 0.4;display: none;">
+
+    </div>
+    <div class="message" style="margin: 0px 25%;text-align:center;opacity:1;height: 125px;">
+        <img src="./images/loading.gif" style="top:60px;margin-top: 30px;height: 25px;">
+    </div>
+</div>
+
+<iframe id="nativeInterface" src="" class="hide"></iframe>
+</body>
+</html>
+
+
+<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="./js/arttmp.mini.js"></script>
+<script type="text/javascript" src="./js/iscroll4.mini.js"></script>
+
+<script type="text/javascript" src="./js/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="./js/jason.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+
+<script type="text/javascript">
+
+
+    var autoGo = true;// 否
+
+   setTimeout(function () {
+        if (autoGo == true) {
+            goHome();
+        }
+    }, 1000 * 3);
+
+    init();
+
+    staticScroll({
+        scrollId: "siftFoucus1",
+        pageCount: 1,
+        autoSlider: false,
+        dot: "focusDot",
+        dotSelect: "dotSelected"
+    });
+
+    // 书架
+    var productScoller = new iScroll("investScroller");
+
+
+    // 小类
+    var smallClassScroller = new iScroll("smallClassScroller");
+
+
+    var myself = new iScroll("loanScroller");// 书城首页
+
+    var aaOrderHomeScroller = new iScroll("aaOrderHomeScroller");// 拼单首页
+
+    var raiderScroller = new iScroll("raiderScroller");// 书架首页
+
+    var myHomeScroller = new iScroll("myHomeScroller");// 个人中心首页
+
+
+    // 小说详细
+    var bookDetailScroller = new iScroll("bookDetailScroller");
+
+
+    // 目录
+    var chaptersListScroller = new iScroll("chaptersListScroller");
+
+
+    // 消息列表
+    var myMessageScroller = new iScroll("myMessageScroller");
+
+    // 拼单产品列表
+    var luckPkProductListScroller = new iScroll("luckPkProductListScroller");
+
+    // 手气拼单产品详情
+    var luckPkProductDetailScroller = new iScroll("luckPkProductDetailScroller");
+
+    // 创建手气拼单
+    var luckPkProductDetailScroller1 = new iScroll("luckPkProductDetailScroller1");
+
+    // 畅读拼单产品详情
+    var vipPkProductDetailScroller = new iScroll("vipPkProductDetailScroller");
+
+    // 创建畅读拼单产品详情
+    var vipPkProductDetailScroller1 = new iScroll("vipPkProductDetailScroller1");
+
+    // 充值产品
+    var chargeProductListScoller = new iScroll("chargeProductListScoller");
+
+    // 畅读产品
+    var vipProductListScoller = new iScroll("vipProductListScoller");
+
+
+    // 阅读章节列表
+    var readerChaptersListScroller = new iScroll("readerChaptersListScroller");
+
+    // 书单列表
+    var bookBillListScroller1 = new iScroll("bookBillListScroller1");
+
+    //激情PK
+    var myCheckPageScroller4passion=new iScroll("myCheckPageScroller4passion");
+    //激情PK完胜
+    var myCheckPageScroller4successpk=new iScroll("myCheckPageScroller4successpk");
+    //激情PK失败
+    var myCheckPageScroller4faildpk=new iScroll("myCheckPageScroller4faildpk");
+
+    // 设置
+    var inter = setInterval(function () {
+        //myMessageScroller.refresh();// 消息列表
+
+    }, 1000);
+
+
+</script>
+
+<!--script src="http://api.map.baidu.com/api?v=2.0&ak=D1ac16e50b3a7c6f4c318984e31998ff"></script>
+<script type="text/javascript" src="./js/map.js"></script-->
