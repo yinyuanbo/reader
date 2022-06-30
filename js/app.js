@@ -5,13 +5,7 @@
      */
     window.config = {
         serviceServer:"https://api.virapi.com/vir_github18ad7318d7859/jczs/",// 数据接口服务服务器地址
-        //serviceServer:"http://localhost:9090/",// 数据接口服务服务器地址
-        //serviceServer:"http://a.scymh.com/",// 数据接口服务服务器地址
-
-        //picServer:"http://222.214.218.193:8888/",// 包裹服务服务器地址
-        // picServer:"http://i.iweyue.com/uploadfile/",// 图片服务服务器地址
         picServer:"",// 图片服务服务器地址
-        picServer1:"http://i2.scymh.com/uploadfile/",// 图片服务服务器地址
         keyPreWord:"weiyue_",// 本地存储前缀
         buyKeyword:'bykyw',//购买关键字
         shelfKeyword:'weiyueshlf',//书架前缀
